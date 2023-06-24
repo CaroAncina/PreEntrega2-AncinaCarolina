@@ -493,9 +493,9 @@ fieldset {
 
 
 /****Media Query****/
-/****Adaptacion Movile hasta 320px****/
+/****Adaptacion Movile hasta 325px****/
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
     header {
         background-color: rgb(162, 253, 223);
         top: 0;
