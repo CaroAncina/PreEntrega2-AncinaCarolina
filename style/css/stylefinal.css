@@ -30,16 +30,64 @@ body {
   background-image: url("../img/Fondo.jpg");
   background: no-repeat;
   background-color: #f6e7f7;
-  font-family: "Zilla Slab", serif;
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
-
-a {
+body a {
   text-decoration: none;
 }
 
+body {
+  font-family: "Zilla Slab", serif;
+}
+
+.button {
+  margin: 20px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 50px;
+  border-width: 3px;
+  border-style: outset;
+  border-color: aquamarine;
+}
+
+/*TABLET*/
+@media (max-width: 768px) {
+  .button {
+    font-weight: 600;
+    font-size: 35px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: rgb(108, 158, 252);
+  }
+}
+/*MOBILE*/
+@media (max-width: 320px) {
+  .button {
+    font-weight: 600;
+    font-size: 35px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: rgb(108, 158, 252);
+  }
+}
+.botones input {
+  font-size: 20px;
+}
+
+/*TABLET*/
+@media (max-width: 768px) {
+  .botones input {
+    font-size: 20px;
+  }
+}
+/*MOBILE*/
+@media (max-width: 320px) {
+  .botones input {
+    font-size: 20px;
+  }
+}
 /****footer****/
 footer {
   background-color: #f1debd;
@@ -127,6 +175,41 @@ footer {
   font-weight: 500;
 }
 
+/*TABLET*/
+@media (max-width: 768px) {
+  .footercolumns {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .footerRedes h2 {
+    margin: 5px;
+    padding: 2px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+/*TABLET*/
+@media (max-width: 320px) {
+  /*Footer*/
+  .footercolumns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .footerRedes h2 {
+    margin: 5px;
+    padding: 2px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+  }
+}
 /****header****/
 header {
   background-color: #f68b7b;
@@ -157,8 +240,7 @@ header nav ul li {
   font-size: 25px;
 }
 
-/****Media Query****/
-/****Adaptacion Tablet hasta 768px****/
+/*TABLET*/
 @media (max-width: 768px) {
   header {
     background-color: rgb(90, 255, 222);
@@ -179,21 +261,114 @@ header nav ul li {
   header nav ul li {
     padding: 2px;
   }
-  .footercolumns {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+}
+/*MOBILE*/
+@media (max-width: 320px) {
+  /*Header*/
+  header {
+    background-color: rgb(147, 253, 231);
+    top: 0;
     width: 100%;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .footerRedes h2 {
-    margin: 5px;
-    padding: 2px;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 500;
+  header nav ul {
+    margin: 15px;
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
+  header nav ul li {
+    padding: 10px;
+  }
+}
+/****Portada****/
+.portada {
+  height: 40vh;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portada h1 {
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 700;
+}
+.portada p {
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  font-size: 40px;
+  max-width: 90%;
+  margin: 30px 0;
+}
+.portada .palabra {
+  font-weight: 800;
+}
+
+/****Section Productos****/
+#productos {
+  margin: 40x;
+  padding: 20px;
+}
+#productos h2 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 35px;
+}
+#productos p {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+}
+#productos img {
+  margin: 10px;
+  padding: 5px;
+}
+#productos article {
+  margin: 10px;
+  padding: 5px;
+}
+
+.Producto1 {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Producto2 {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Producto3 {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/*TABLET*/
+@media (max-width: 768px) {
   /*Index*/
+  .palabra {
+    font-weight: 800;
+  }
   .Producto1 {
     margin: 20px;
     padding: 10px;
@@ -229,183 +404,13 @@ header nav ul li {
     margin: 10px;
     padding: 5px;
   }
-  /*Pagina Productos*/
-  #productosdestacados {
-    margin: 50px auto;
-    padding: 20px;
-    height: auto;
-    display: grid;
-    grid-template-columns: 5fr;
-  }
-  #productosdestacados img {
-    box-shadow: 10px 5px 5px rgb(159, 159, 159);
-    height: auto;
-    width: auto;
-  }
-  .tortas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .postres {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .fiestas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .variedades {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .tituloprincipal {
-    margin: 15px;
-    padding: 10px;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 40px;
-  }
-  /*pagina=quienes somos*/
-  #presentacion {
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  #presentacion h1 {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 40px;
-    margin: auto;
-    padding: auto;
-  }
-  .button {
-    font-weight: 600;
-    font-size: 35px;
-    border-width: 3px;
-    border-style: outset;
-    border-color: rgb(108, 158, 252);
-  }
-  .parrafo1 {
-    margin: auto;
-    padding: auto;
-    font-style: normal;
-    font-size: 30px;
-    font-weight: 200;
-    line-height: 30px;
-  }
-  .parrafo2 {
-    margin: auto;
-    padding: auto;
-    font-style: normal;
-    font-size: 30px;
-    font-weight: 200;
-    line-height: 30px;
-  }
-  /*Pagina=contacto*/
-  #formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: auto;
-    padding: 15px;
-    font-size: 60px;
-    font-weight: 300;
-    font-style: normal;
-  }
-  .botones input {
-    font-size: 20px;
-  }
-  .contactanos h1 {
-    margin: auto;
-    padding: auto;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 35px;
-  }
-  .contactanos h2 {
-    margin: auto;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 2rem;
-  }
-  fieldset {
-    margin: auto;
-    padding: auto;
-    font-size: 45%;
-  }
-  /*Pagina=proximamente*/
-  .proximamente {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .proximamente h1 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 40px;
-    margin: 0;
-    padding: 0;
-  }
-  .proximamente h2 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-  }
 }
-/****Adaptacion Movile hasta 320px****/
+/*MOBILE*/
 @media (max-width: 320px) {
-  /*Header*/
-  header {
-    background-color: rgb(147, 253, 231);
-    top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  header nav ul {
-    margin: 15px;
-    padding: 10px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  header nav ul li {
-    padding: 10px;
-  }
-  /*Footer*/
-  .footercolumns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-  .footerRedes h2 {
-    margin: 5px;
-    padding: 2px;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 500;
-  }
   /*Index*/
+  .palabra {
+    font-weight: 800;
+  }
   .Producto1 {
     margin: 20px;
     padding: 10px;
@@ -460,250 +465,7 @@ header nav ul li {
     margin: 20px 15px 15px 20px;
     padding: 10px 0;
   }
-  /*Pagina Productos*/
-  #productosdestacados {
-    margin: 10px;
-    padding: 10px;
-    height: auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 5fr;
-  }
-  #productosdestacados img {
-    box-shadow: 10px 5px 5px rgb(159, 159, 159);
-    height: auto;
-    width: auto;
-  }
-  .tortas h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-  }
-  .tortas p {
-    font-style: normal;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-  .postres h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-  }
-  .postres p {
-    font-style: normal;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-  .fiestas h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-  }
-  .fiestas p {
-    font-style: normal;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-  .variedades h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-  }
-  .variedades p {
-    font-style: normal;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-  .tituloprincipal {
-    margin: 15px;
-    padding: 5px;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 40px;
-  }
-  /*pagina=quienes somos*/
-  #presentacion {
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  #presentacion h1 {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 40px;
-    margin: auto;
-    padding: auto;
-  }
-  .button {
-    font-weight: 600;
-    font-size: 35px;
-    border-width: 3px;
-    border-style: outset;
-    border-color: rgb(108, 158, 252);
-  }
-  .parrafo1 {
-    margin: auto;
-    padding: auto;
-    font-style: normal;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 25px;
-  }
-  .parrafo2 {
-    margin: auto;
-    padding: auto;
-    font-style: normal;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 25px;
-  }
-  /*Pagina=contacto*/
-  #formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: auto;
-    padding: 20px;
-    font-size: 40px;
-    font-weight: 300;
-    font-style: normal;
-  }
-  .botones input {
-    font-size: 20px;
-  }
-  .contactanos h1 {
-    margin: auto;
-    padding: auto;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  .contactanos h2 {
-    margin: auto;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 2rem;
-  }
-  fieldset {
-    margin: auto;
-    padding: auto;
-    font-size: 40%;
-  }
-  /*Pagina=proximamente*/
-  .proximamente {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .proximamente h1 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-  }
-  .proximamente h2 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-  }
 }
-/*******INDEX**********/
-/****Portada****/
-.portada {
-  height: 40vh;
-  margin: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.portada h1 {
-  margin: 5px;
-  padding: 2px;
-  text-align: center;
-  font-size: 60px;
-  font-style: italic;
-  font-weight: 700;
-}
-.portada p {
-  margin: 5px;
-  padding: 2px;
-  text-align: center;
-  font-size: 40px;
-  max-width: 90%;
-  margin: 30px 0;
-}
-
-.palabra {
-  font-weight: 800;
-}
-
-/****Section Productos****/
-#productos {
-  margin: 40x;
-  padding: 20px;
-}
-#productos h2 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 35px;
-}
-#productos p {
-  font-style: normal;
-  font-size: 2rem;
-  font-weight: 400;
-}
-#productos img {
-  margin: 10px;
-  padding: 5px;
-}
-#productos article {
-  margin: 10px;
-  padding: 5px;
-}
-
-.Producto1 {
-  margin: 20px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.Producto2 {
-  margin: 20px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.Producto3 {
-  margin: 20px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
 /****Pagina:Quienes Somos****/
 #presentacion {
   margin: 50px;
@@ -719,16 +481,6 @@ header nav ul li {
   font-size: 50px;
   margin: 15px;
   padding: 10px;
-}
-
-.button {
-  margin: 20px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 50px;
-  border-width: 3px;
-  border-style: outset;
-  border-color: aquamarine;
 }
 
 .parrafo1 {
@@ -749,6 +501,75 @@ header nav ul li {
   line-height: 40px;
 }
 
+/*TABLET*/
+@media (max-width: 768px) {
+  #presentacion {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #presentacion h1 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    margin: auto;
+    padding: auto;
+  }
+  .parrafo1 {
+    margin: auto;
+    padding: auto;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 30px;
+  }
+  .parrafo2 {
+    margin: auto;
+    padding: auto;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 30px;
+  }
+}
+/*MOBILE*/
+@media (max-width: 320px) {
+  /*pagina=quienes somos*/
+  #presentacion {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #presentacion h1 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    margin: auto;
+    padding: auto;
+  }
+  .parrafo1 {
+    margin: auto;
+    padding: auto;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .parrafo2 {
+    margin: auto;
+    padding: auto;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+}
 /****Pagina=Productos****/
 .tituloprincipal {
   font-style: italic;
@@ -854,6 +675,125 @@ header nav ul li {
   height: 60%;
 }
 
+/*TABLET*/
+@media (max-width: 768px) {
+  /*Pagina Productos*/
+  #productosdestacados {
+    margin: 50px auto;
+    padding: 20px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 5fr;
+  }
+  #productosdestacados img {
+    box-shadow: 10px 5px 5px rgb(159, 159, 159);
+    height: auto;
+    width: auto;
+  }
+  .tortas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .postres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fiestas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .variedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tituloprincipal {
+    margin: 15px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
+/*MOBILE*/
+@media (max-width: 320px) {
+  /*Pagina Productos*/
+  #productosdestacados {
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 5fr;
+  }
+  #productosdestacados img {
+    box-shadow: 10px 5px 5px rgb(159, 159, 159);
+    height: auto;
+    width: auto;
+  }
+  .tortas h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .tortas p {
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .postres h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .postres p {
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .fiestas h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .fiestas p {
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .variedades h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .variedades p {
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .tituloprincipal {
+    margin: 15px;
+    padding: 5px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
 /****Pagina=proximamente****/
 .proximamente {
   margin: 60px;
@@ -877,6 +817,56 @@ header nav ul li {
   padding: 10px;
 }
 
+/*TABLET*/
+@media (max-width: 768px) {
+  /*Pagina=proximamente*/
+  .proximamente {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .proximamente h1 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .proximamente h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*MOBILE*/
+@media (max-width: 320px) {
+  /*Pagina=proximamente*/
+  .proximamente {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .proximamente h1 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .proximamente h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
 /****Pagina=Contacto****/
 #formulario {
   display: flex;
@@ -886,10 +876,6 @@ header nav ul li {
   font-size: 40px;
   font-weight: 300;
   font-style: normal;
-}
-
-.botones input {
-  font-size: 20px;
 }
 
 .contactanos h1 {
@@ -918,4 +904,69 @@ fieldset {
   width: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*TABLET*/
+@media (max-width: 768px) {
+  #formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    padding: 15px;
+    font-size: 60px;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .contactanos h1 {
+    margin: auto;
+    padding: auto;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .contactanos h2 {
+    margin: auto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  fieldset {
+    margin: auto;
+    padding: auto;
+    font-size: 45%;
+  }
+}
+/*MOBILE*/
+@media (max-width: 320px) {
+  #formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .contactanos h1 {
+    margin: auto;
+    padding: auto;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .contactanos h2 {
+    margin: auto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  fieldset {
+    margin: auto;
+    padding: auto;
+    font-size: 40%;
+  }
+}
+
+/*# sourceMappingURL=stylefinal.css.map */

@@ -9,10 +9,6 @@
     font-style: normal;
 }
 
-.botones input {
-    font-size: 20px;
-}
-
 .contactanos h1 {
     margin: 15px;
     padding: 10px;
@@ -37,4 +33,82 @@ fieldset {
 .comentario textarea {
     height: 200px;
     width: auto;
+}
+
+
+
+
+/*TABLET*/
+@media (max-width: 768px) {
+
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: auto;
+        padding: 15px;
+        font-size: 60px;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .contactanos h1 {
+        margin: auto;
+        padding: auto;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    .contactanos h2 {
+        margin: auto;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    fieldset {
+        margin: auto;
+        padding: auto;
+        font-size: 45%;
+    }
+}
+
+
+/*MOBILE*/
+@media (max-width: 320px) {
+
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: auto;
+        padding: 20px;
+        font-size: 40px;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .contactanos h1 {
+        margin: auto;
+        padding: auto;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .contactanos h2 {
+        margin: auto;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    fieldset {
+        margin: auto;
+        padding: auto;
+        font-size: 40%;
+    }
 }

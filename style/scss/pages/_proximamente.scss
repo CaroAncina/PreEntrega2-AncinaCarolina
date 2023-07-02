@@ -22,3 +22,66 @@
         padding: 10px;
     }
 }
+
+
+/*TABLET*/
+
+@media (max-width: 768px) {
+    /*Pagina=proximamente*/
+
+    .proximamente {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .proximamente h1 {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .proximamente h2 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/*MOBILE*/
+@media (max-width: 320px) {
+
+    /*Pagina=proximamente*/
+
+    .proximamente {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h1 {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+}

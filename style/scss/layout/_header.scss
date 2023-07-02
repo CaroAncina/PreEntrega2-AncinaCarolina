@@ -30,3 +30,60 @@ header {
         }
     }
 }
+
+
+/*TABLET*/
+
+@media (max-width: 768px) {
+    header {
+        background-color: rgb(90, 255, 222);
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        nav ul {
+            margin: 15px;
+            padding: 10px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            li {
+                padding: 2px;
+            }
+        }
+    }
+}
+
+
+
+/*MOBILE*/
+
+@media (max-width: 320px) {
+
+    /*Header*/
+    header {
+        background-color: rgb(147, 253, 231);
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        nav ul {
+            margin: 15px;
+            padding: 10px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            li {
+                padding: 10px;
+            }
+        }
+    }
+}

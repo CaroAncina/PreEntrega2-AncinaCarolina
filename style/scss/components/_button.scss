@@ -1,0 +1,32 @@
+.button {
+    margin: 20px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 50px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: aquamarine;
+}
+
+
+/*TABLET*/
+@media (max-width: 768px){
+    .button {
+        font-weight: 600;
+        font-size: 35px;
+        border-width: 3px;
+        border-style: outset;
+        border-color: rgb(108, 158, 252);
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 320px){
+    .button {
+        font-weight: 600;
+        font-size: 35px;
+        border-width: 3px;
+        border-style: outset;
+        border-color: rgb(108, 158, 252);
+    }
+}

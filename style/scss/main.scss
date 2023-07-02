@@ -3,14 +3,15 @@
 
 //base
 @import "./base/reset";
+@import "./base/typography";
 
 //components
 @import "./components/button";
+@import "./components/input";
 
 //layout
 @import "./layout/footer";
 @import "./layout/header";
-@import "./layout/mediaquerys.scss";
 
 //pages
 @import "./pages/index";

@@ -113,3 +113,155 @@
     }
 }
 
+
+
+/*TABLET*/
+@media (max-width: 768px) {
+
+    /*Pagina Productos*/
+
+    #productosdestacados {
+        margin: 50px auto;
+        padding: 20px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 5fr;
+
+        img {
+            box-shadow: 10px 5px 5px rgb(159, 159, 159);
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .tortas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .postres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fiestas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .variedades {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloprincipal {
+        margin: 15px;
+        padding: 10px;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 40px;
+    }
+}
+
+
+
+/*MOBILE*/
+@media (max-width: 320px) {
+
+    /*Pagina Productos*/
+
+    #productosdestacados {
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 5fr;
+
+        img {
+            box-shadow: 10px 5px 5px rgb(159, 159, 159);
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .tortas {
+        h2 {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        p {
+            font-style: normal;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    .postres {
+        h2 {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        p {
+            font-style: normal;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    .fiestas {
+        h2 {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        p {
+            font-style: normal;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    .variedades {
+        h2 {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        p {
+            font-style: normal;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    .tituloprincipal {
+        margin: 15px;
+        padding: 5px;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 40px;
+    }
+}
