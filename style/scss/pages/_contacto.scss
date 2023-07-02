@@ -1,0 +1,40 @@
+/****Pagina=Contacto****/
+#formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.botones input {
+    font-size: 20px;
+}
+
+.contactanos h1 {
+    margin: 15px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.contactanos h2 {
+    margin: 15px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+fieldset {
+    margin: 20px;
+    padding: 15px;
+}
+
+.comentario textarea {
+    height: 200px;
+    width: auto;
+}

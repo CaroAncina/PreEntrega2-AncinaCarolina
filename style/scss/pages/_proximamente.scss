@@ -1,0 +1,24 @@
+/****Pagina=proximamente****/
+.proximamente {
+    margin: 60px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 50px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 35px;
+        margin: 10px;
+        padding: 10px;
+    }
+}

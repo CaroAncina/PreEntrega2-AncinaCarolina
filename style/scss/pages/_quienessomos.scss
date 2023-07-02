@@ -1,0 +1,45 @@
+/****Pagina:Quienes Somos****/
+#presentacion {
+    margin: 50px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 50px;
+        margin: 15px;
+        padding: 10px;
+    }
+}
+
+.button {
+    margin: 20px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 50px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: aquamarine;
+}
+
+.parrafo1 {
+    margin: 20px;
+    padding: 20px;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.parrafo2 {
+    margin: 20px;
+    padding: 20px;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 40px;
+}

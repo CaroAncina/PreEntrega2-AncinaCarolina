@@ -1,0 +1,23 @@
+//abstracts
+@import "./abstracts/variables";
+
+//base
+@import "./base/reset";
+
+//components
+@import "./components/button";
+
+//layout
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/mediaquerys.scss";
+
+//pages
+@import "./pages/index";
+@import "./pages/quienessomos";
+@import "./pages/productos";
+@import "./pages/proximamente";
+@import "./pages/contacto";
+
+
+

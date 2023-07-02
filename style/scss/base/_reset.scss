@@ -1,0 +1,21 @@
+/****selector universal****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****estilos globales****/
+body {
+    background-image: url("../img/Fondo.jpg");
+    background: no-repeat;
+    background-color: #f6e7f7;
+    font-family: 'Zilla Slab', serif;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+a {
+    text-decoration: none;
+}

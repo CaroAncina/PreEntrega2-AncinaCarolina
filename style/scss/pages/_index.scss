@@ -1,0 +1,88 @@
+/*******INDEX**********/
+
+/****Portada****/
+.portada {
+    height: 40vh;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin: 5px;
+        padding: 2px;
+        text-align: center;
+        font-size: 60px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 5px;
+        padding: 2px;
+        text-align: center;
+        font-size: 40px;
+        max-width: 90%;
+        margin: 30px 0;
+    }
+}
+
+.palabra {
+    font-weight: 800;
+}
+
+/****Section Productos****/
+#productos {
+    margin: 40x;
+    padding: 20px;
+
+    h2 {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 35px;
+    }
+
+    p {
+        font-style: normal;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    img {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    article {
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+.Producto1 {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Producto2 {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Producto3 {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
