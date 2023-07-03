@@ -33,7 +33,6 @@ header {
 
 
 /*TABLET*/
-
 @media (max-width: 768px) {
     header {
         background-color: rgb(90, 255, 222);
@@ -59,12 +58,8 @@ header {
 }
 
 
-
 /*MOBILE*/
-
 @media (max-width: 320px) {
-
-    /*Header*/
     header {
         background-color: rgb(147, 253, 231);
         top: 0;

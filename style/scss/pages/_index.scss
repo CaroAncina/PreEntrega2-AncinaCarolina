@@ -8,19 +8,21 @@
     align-items: center;
     justify-content: center;
 
-    h1 {
+    .tituloportada {
         margin: 5px;
         padding: 2px;
         text-align: center;
+    }
+
+    h1 {
+        @extend .tituloportada;
         font-size: 60px;
         font-style: italic;
         font-weight: 700;
     }
 
-    p {
-        margin: 5px;
-        padding: 2px;
-        text-align: center;
+    h2 {
+        @extend .tituloportada;
         font-size: 40px;
         max-width: 90%;
         margin: 30px 0;
@@ -205,13 +207,5 @@
             max-width: 90%;
             margin: 30px 0;
         }
-    }
-
-    .tituloprincipal {
-        font-style: italic;
-        font-weight: 800;
-        font-size: 50px;
-        margin: 20px 15px 15px 20px;
-        padding: 10px 0;
     }
 }

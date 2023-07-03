@@ -1,3 +1,17 @@
+/*Boton footer*/
+.botonarriba {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Boton Quienes Somos*/
 .button {
     margin: 20px;
     padding: 10px;

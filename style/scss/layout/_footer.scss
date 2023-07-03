@@ -8,16 +8,9 @@ footer {
     padding: 30px 0;
 }
 
-.botonarriba {
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.titulofooter {
+    margin: 5px;
+    padding: 2px;
 }
 
 .footercolumns {
@@ -28,23 +21,16 @@ footer {
 }
 
 .footerEnlaces {
-    h4 {
-        margin: 5px;
-        padding: 2px;
-    }
-
-    li {
-        font-size: 20px;
-        text-align: left
-    }
-
     ul {
-        margin: 5px;
-        padding: 2px;
+        @extend .titulofooter;
         list-style: none;
+
+        li {
+            font-size: 20px;
+            text-align: left;
+        }
     }
 }
-
 
 .footerPagos {
     ul {
@@ -65,22 +51,12 @@ footer {
             }
         }
     }
-
-    h2 {
-        margin: 5px;
-        padding: 2px;
-        font-size: 25px;
-        text-align: center;
-        font-weight: 400;
-    }
-
 }
 
 .footerRedes {
     ul {
+        @extend .titulofooter;
         list-style: none;
-        margin: 5px;
-        padding: 2px;
         display: flex;
         justify-content: space-evenly;
 
@@ -91,9 +67,8 @@ footer {
         }
     }
 
-    h2 {
-        margin: 5px;
-        padding: 2px;
+    h3 {
+        @extend .titulofooter;
         font-size: 30px;
         text-align: center;
         font-weight: 500;
@@ -113,34 +88,35 @@ footer {
         padding-bottom: 20px;
     }
 
-    .footerRedes h2 {
-        margin: 5px;
-        padding: 2px;
-        font-size: 25px;
-        text-align: center;
-        font-weight: 500;
+    .footerRedes {
+        h3 {
+            @extend .titulofooter;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 500;
+        }
     }
 }
 
 
-/*TABLET*/
-
+/*MOBILE*/
 @media (max-width: 320px) {
-
-    /*Footer*/
     .footercolumns {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         width: 100%;
         padding-bottom: 20px;
     }
 
-    .footerRedes h2 {
-        margin: 5px;
-        padding: 2px;
-        font-size: 25px;
-        text-align: center;
-        font-weight: 500;
+    .footerRedes {
+        h3 {
+            margin: 5px;
+            padding: 2px;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 500;
+        }
     }
+
 }
