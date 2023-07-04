@@ -1,0 +1,24 @@
+
+/**ESTILOS DE TEXTO PARA TITULOS H2 Y PARRAFO**/
+@mixin tipografia($style,$weight,$size,$align) {
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    text-align: $align;
+}
+
+/*MARGIN Y PADDING*/
+@mixin margin-padding($margin,$padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+/*ESTILOS FLEX*/
+@mixin flex($direction,$items,$content){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $items;
+    justify-content: $content;
+}
+
+    

@@ -34,8 +34,7 @@ footer {
 
 .footerPagos {
     ul {
-        margin: 5px;
-        padding: 2px;
+        @extend .titulofooter;
         list-style: none;
         display: flex;
         flex-direction: column;
