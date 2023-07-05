@@ -1,33 +1,26 @@
 /*Boton footer*/
 .botonarriba {
     width: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    @include margin-padding(10px, 15px);
+    @include tipografia (normal, 400, 25px, center);
+    @include flex(column, center, space-evenly);
 }
 
 /*Boton Quienes Somos*/
 .button {
-    margin: 20px;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 50px;
+    @include margin-padding(20px, 10px);
+    @include tipografia (normal, 600, 50px, center);
     border-width: 3px;
     border-style: outset;
     border-color: aquamarine;
 }
 
 
+//MEDIA QUERIES
 /*TABLET*/
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .button {
-        font-weight: 600;
-        font-size: 35px;
+        @include tipografia (normal, 600, 35px, center);
         border-width: 3px;
         border-style: outset;
         border-color: rgb(108, 158, 252);
@@ -35,10 +28,10 @@
 }
 
 /*MOBILE*/
-@media (max-width: 320px){
+@media (max-width: 320px) {
     .button {
-        font-weight: 600;
-        font-size: 35px;
+        width: auto;
+        @include tipografia (normal, 600, 35px, center);
         border-width: 3px;
         border-style: outset;
         border-color: rgb(108, 158, 252);

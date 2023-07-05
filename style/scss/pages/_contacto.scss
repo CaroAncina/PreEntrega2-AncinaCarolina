@@ -1,114 +1,82 @@
 /****Pagina=Contacto****/
 #formulario {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding: 20px;
-    font-size: 40px;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.contactanos h1 {
-    margin: 15px;
-    padding: 10px;
-    font-style: italic;
-    font-weight: 800;
-    font-size: 50px;
-}
-
-.contactanos h2 {
-    margin: 15px;
-    padding: 10px;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 35px;
-}
-
-fieldset {
-    margin: 20px;
-    padding: 15px;
-}
-
-.comentario textarea {
-    height: 200px;
-    width: auto;
-}
-
-
-
-
-/*TABLET*/
-@media (max-width: 768px) {
-
-    #formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: auto;
-        padding: 15px;
-        font-size: 60px;
-        font-weight: 300;
-        font-style: normal;
-    }
+    @include flex(column, flex-start, center);
+    @include margin-padding(25px, 20px);
+    @include tipografia (normal, 300, 40px, left);
 
     .contactanos h1 {
-        margin: auto;
-        padding: auto;
-        font-style: italic;
-        font-weight: 700;
-        font-size: 35px;
+        @include margin-padding(15px, 10px);
+        @include tipografia (italic, 800, 50px, left);
     }
 
     .contactanos h2 {
-        margin: auto;
-        font-style: italic;
-        font-weight: 500;
-        font-size: 2rem;
+        @include margin-padding(15px, 10px);
+        @include tipografia (italic, 500, 35px, left);
     }
 
     fieldset {
-        margin: auto;
-        padding: auto;
-        font-size: 45%;
+        @include margin-padding(20px, 15px);
+        @include tipografia (italic, 300, 40px, left);
+
+        .comentario textarea {
+            @include size (50%, 200px);
+        }
+    }
+}
+
+
+//MEDIA QUERIES
+/*TABLET*/
+@media (max-width: 768px) {
+    #formulario {
+        @include flex(column, flex-start, flex-start);
+        @include margin-padding(auto, 15px);
+        @include tipografia (normal, 300, 60px, left);
+
+        .contactanos h1 {
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 700, 35px, left);
+        }
+
+        .contactanos h2 {
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 500, 2rem, left);
+        }
+
+        fieldset {
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 500, 2rem, left);
+        }
     }
 }
 
 
 /*MOBILE*/
 @media (max-width: 320px) {
-
     #formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: auto;
-        padding: 20px;
-        font-size: 40px;
-        font-weight: 300;
-        font-style: normal;
-    }
+        @include flex(column, flex-start, flex-start);
+        @include margin-padding(auto, 20px);
+        @include tipografia (normal, 300, 40px, left);
 
-    .contactanos h1 {
-        margin: auto;
-        padding: auto;
-        font-style: italic;
-        font-weight: 700;
-        font-size: 30px;
-    }
+        .contactanos h1 {
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 700, 30px, left);
+        }
 
-    .contactanos h2 {
-        margin: auto;
-        font-style: italic;
-        font-weight: 500;
-        font-size: 2rem;
-    }
+        .contactanos h2 {
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 500, 25px, left);
+        }
 
-    fieldset {
-        margin: auto;
-        padding: auto;
-        font-size: 40%;
+        fieldset {
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 500, 20px, left);
+
+            .comentario textarea {
+                @include size (250px, 150px);
+                height: 150px;
+                width: 250px;
+            }
+        }
     }
 }

@@ -1,267 +1,178 @@
 /****Pagina=Productos****/
 .tituloprincipal {
-    font-style: italic;
-    font-weight: 800;
-    font-size: 50px;
-    margin: 30px;
-    padding: 20px;
+    @include tipografia (italic, 800, 50px, left);
+    @include margin-padding(30px, 20px);
 }
 
 #productosdestacados {
-    margin: 30px;
-    padding: 20px;
+    @include margin-padding(30px, 20px);
+    @include grid(5fr 5fr, 2fr 2fr, 50px, 20px);
+    align-items: start;
     height: auto;
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: 2fr 2fr;
-    column-gap: 20px;
-    row-gap: 20px;
 
     img {
-        box-shadow: 10px 5px 5px rgb(159, 159, 159);
-        width: auto;
-        height: auto;
-    }
-}
-
-.tortas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    h2 {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 35px;
-    }
-
-    p {
-        font-style: normal;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 30px;
-    }
-}
-
-.postres {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    h2 {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 35px;
-    }
-
-    p {
-        font-style: normal;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 30px;
-    }
-}
-
-.fiestas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    h2 {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 35px;
-    }
-
-    p {
-        font-style: normal;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 30px;
-    }
-}
-
-.variedades {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    h2 {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 35px;
-    }
-
-    p {
-        font-style: normal;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 30px;
-    }
-
-    img {
-        width: 50%;
-        height: 60%;
-    }
-}
-
-
-
-/*TABLET*/
-@media (max-width: 768px) {
-
-    /*Pagina Productos*/
-
-    #productosdestacados {
-        margin: 50px auto;
-        padding: 20px;
-        height: auto;
-        display: grid;
-        grid-template-columns: 5fr;
-
-        img {
-            box-shadow: 10px 5px 5px rgb(159, 159, 159);
-            height: auto;
-            width: auto;
-        }
+        box-shadow: $img-shadow;
+        @include size(auto, auto);
+        margin-bottom: 10px;
     }
 
     .tortas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, space-evenly);
+
+        h2 {
+            @include tipografia (italic, 500, 35px, center);
+        }
+
+        p {
+            @include tipografia (normal, 300, 2rem, justify);
+            line-height: 30px;
+        }
     }
 
     .postres {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, space-evenly);
+
+        h2 {
+            @include tipografia (italic, 500, 35px, center);
+        }
+
+        p {
+            @include tipografia (normal, 300, 2rem, justify);
+            line-height: 30px;
+        }
     }
 
     .fiestas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, space-evenly);
+
+        h2 {
+            @include tipografia (italic, 500, 35px, center);
+        }
+
+        p {
+            @include tipografia (normal, 300, 2rem, justify);
+            line-height: 30px;
+        }
     }
 
     .variedades {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+        @include flex(column, center, space-evenly);
 
-    .tituloprincipal {
-        margin: 15px;
-        padding: 10px;
-        font-style: italic;
-        font-weight: 600;
-        font-size: 40px;
+        h2 {
+            @include tipografia (italic, 500, 35px, center);
+        }
+
+        p {
+            @include tipografia (normal, 300, 2rem, justify);
+            line-height: 30px;
+        }
+
+        img {
+            @include size(50%, 60%);
+        }
     }
 }
 
+
+//MEDIA QUERIES
+/*TABLET*/
+@media (max-width: 768px) {
+    .tituloprincipal {
+        @include margin-padding(15px, 10px);
+        @include tipografia (italic, 600, 40px, left);
+    }
+
+    #productosdestacados {
+        @include margin-padding(20px, 10px);
+        @include grid(5fr, 2fr, 5px, 30px);
+        height: auto;
+
+        img {
+            box-shadow: $img-shadow;
+            @include size(auto, auto);
+            margin-bottom: 10px;
+        }
+
+        .tortas {
+            @include flex(column, center, center);
+        }
+
+        .postres {
+            @include flex(column, center, center);
+        }
+
+        .fiestas {
+            @include flex(column, center, center);
+        }
+
+        .variedades {
+            @include flex(column, center, center);
+        }
+    }
+}
 
 
 /*MOBILE*/
 @media (max-width: 320px) {
-
-    /*Pagina Productos*/
+    .tituloprincipal {
+        @include margin-padding(15px, 5px);
+        @include tipografia (italic, 600, 40px, left);
+    }
 
     #productosdestacados {
-        margin: 10px;
-        padding: 10px;
+        @include margin-padding(10px, 10px);
+        @include grid(5fr, 2fr, 5px, 30px);
         height: auto;
-        display: grid;
         justify-content: center;
-        grid-template-columns: 5fr;
 
         img {
-            box-shadow: 10px 5px 5px rgb(159, 159, 159);
-            height: auto;
-            width: auto;
-        }
-    }
-
-    .tortas {
-        h2 {
-            font-style: italic;
-            font-weight: 500;
-            font-size: 30px;
+            box-shadow: $img-shadow;
+            @include size(auto, auto);
+            margin-bottom: 10px;
         }
 
-        p {
-            font-style: normal;
-            text-align: center;
-            font-size: 25px;
-            font-weight: 500;
-            line-height: 25px;
-        }
-    }
+        .tortas {
+            h2 {
+                @include tipografia (italic, 500, 30px, center);
+            }
 
-    .postres {
-        h2 {
-            font-style: italic;
-            font-weight: 500;
-            font-size: 30px;
+            p {
+                @include tipografia (normal, 500, 25px, center);
+            }
         }
 
-        p {
-            font-style: normal;
-            text-align: center;
-            font-size: 25px;
-            font-weight: 500;
-            line-height: 25px;
-        }
-    }
+        .postres {
+            h2 {
+                @include tipografia (italic, 500, 30px, center);
+            }
 
-    .fiestas {
-        h2 {
-            font-style: italic;
-            font-weight: 500;
-            font-size: 30px;
+            p {
+                @include tipografia (normal, 500, 25px, center);
+            }
         }
 
-        p {
-            font-style: normal;
-            text-align: center;
-            font-size: 25px;
-            font-weight: 500;
-            line-height: 25px;
-        }
-    }
+        .fiestas {
+            h2 {
+                @include tipografia (italic, 500, 30px, center);
+            }
 
-    .variedades {
-        h2 {
-            font-style: italic;
-            font-weight: 500;
-            font-size: 30px;
+            p {
+                @include tipografia (normal, 500, 25px, center);
+            }
         }
 
-        p {
-            font-style: normal;
-            text-align: center;
-            font-size: 25px;
-            font-weight: 500;
-            line-height: 25px;
-        }
-    }
+        .variedades {
+            h2 {
+                @include tipografia (italic, 500, 30px, center);
+            }
 
-    .tituloprincipal {
-        margin: 15px;
-        padding: 5px;
-        font-style: italic;
-        font-weight: 600;
-        font-size: 40px;
+            p {
+                @include tipografia (normal, 500, 25px, center);
+            }
+
+            img {
+                @include size(auto, auto);
+            }
+        }
     }
 }

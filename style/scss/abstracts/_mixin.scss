@@ -1,24 +1,47 @@
-
-/**ESTILOS DE TEXTO PARA TITULOS H2 Y PARRAFO**/
-@mixin tipografia($style,$weight,$size,$align) {
+//ESTILOS DE TEXTO PARA TITULOS H2 Y PARRAFO//
+@mixin tipografia($style, $weight, $size, $align) {
     font-style: $style;
     font-weight: $weight;
     font-size: $size;
     text-align: $align;
 }
 
-/*MARGIN Y PADDING*/
-@mixin margin-padding($margin,$padding){
+//MARGIN Y PADDING//
+@mixin margin-padding($margin, $padding) {
     margin: $margin;
     padding: $padding;
 }
 
-/*ESTILOS FLEX*/
-@mixin flex($direction,$items,$content){
+//TAMAÑO//
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+//ESTILOS FLEX//
+@mixin flex($direction, $items, $content) {
     display: flex;
     flex-direction: $direction;
     align-items: $items;
     justify-content: $content;
 }
 
-    
+//ESTILOS GRID//
+@mixin grid($colums, $rows, $column-gap, $row-gap) {
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+}
+
+
+
+
+
+//@include tipografia (style, weight, size, alingn);
+//@include margin-padding(margin, padding);
+//@include size (width,height); 
+//@include flex(direction, align items, justify content);
+//@include grid(column, rows, column-gap,row-gap);

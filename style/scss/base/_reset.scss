@@ -9,7 +9,7 @@
 body {
     background-image: url("../img/Fondo.jpg");
     background: no-repeat;
-    background-color: #f6e7f7;
+    background-color:$color-fondo;
     font-family: $estilo-texto;
     display: grid;
     min-height: 100vh;

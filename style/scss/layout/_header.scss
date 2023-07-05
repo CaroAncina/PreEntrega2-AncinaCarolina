@@ -1,57 +1,45 @@
 /****header****/
 header {
-    background-color: #f68b7b;
+    background-color: $color-primario-nav;
     top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, center, space-between);
 
     .logo {
-        width: 110px;
-        height: 120px;
-        margin: 5px;
-        padding: 5px;
+        @include size (110px, 120px);
+        @include margin-padding(5px, 5px);
     }
 
     nav ul {
-        margin: 15px;
-        padding: 10px;
         list-style-type: none;
-        display: flex;
-        justify-content: center;
+        @include margin-padding(15px, 10px);
+        @include flex(row, center, center);
 
         li {
-            margin: 5px;
-            padding: 30px;
-            font-style: italic;
-            font-weight: 400;
-            font-size: 25px;
+            @include margin-padding(5px, 30px);
+            @include tipografia (italic, 400, 25px, center);
         }
     }
 }
 
 
+//MEDIA QUERIES
 /*TABLET*/
 @media (max-width: 768px) {
     header {
-        background-color: rgb(90, 255, 222);
+        background-color: $color-secundario-nav;
         top: 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        @include flex(column, flex-start, center);
 
         nav ul {
-            margin: 15px;
-            padding: 10px;
             list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            @include margin-padding(15px, 10px);
+            @include flex(column, flex-start, center);
 
             li {
                 padding: 2px;
+                @include tipografia (italic, 400, 30px, center);
             }
         }
     }
@@ -61,23 +49,19 @@ header {
 /*MOBILE*/
 @media (max-width: 320px) {
     header {
-        background-color: rgb(147, 253, 231);
+        background-color: $color-secundario-nav;
         top: 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        @include flex(column, flex-start, center);
 
         nav ul {
-            margin: 15px;
-            padding: 10px;
             list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            @include margin-padding(15px, 10px);
+            @include flex(column, flex-start, center);
 
             li {
                 padding: 10px;
+                @include tipografia (italic, 500, 40px, center);
             }
         }
     }

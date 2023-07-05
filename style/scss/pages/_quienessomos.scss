@@ -1,114 +1,59 @@
-/****Pagina:Quienes Somos****/
+/****Página:Quienes Somos****/
 #presentacion {
-    margin: 50px;
-    padding: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include margin-padding(50px, 80px);
+    @include flex(column, center, center);
 
     h1 {
-        font-style: italic;
-        font-weight: 800;
-        font-size: 50px;
-        margin: 15px;
-        padding: 10px;
+        @include margin-padding(15px, 20px);
+        @include tipografia (italic, 800, 50px, center);
     }
 }
 
-.parrafo1 {
-    margin: 20px;
-    padding: 20px;
-    font-style: normal;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 40px;
-}
-
-.parrafo2 {
-    margin: 20px;
-    padding: 20px;
-    font-style: normal;
-    font-size: 2rem;
-    font-weight: 400;
+.parrafo {
+    @include margin-padding(20px, 20px);
+    @include tipografia (normal, 400, 2rem, justify-content);
     line-height: 40px;
 }
 
 
+//MEDIA QUERIES
 /*TABLET*/
 @media (max-width: 768px) {
     #presentacion {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        @include margin-padding(0, 10px);
+        @include flex(column, center, flex-start);
 
         h1 {
-            font-style: italic;
-            font-weight: 700;
-            font-size: 40px;
-            margin: auto;
-            padding: auto;
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 700, 40px, center);
         }
     }
-    .parrafo1 {
-        margin: auto;
-        padding: auto;
-        font-style: normal;
-        font-size: 30px;
-        font-weight: 200;
-        line-height: 30px;
-    }
 
-    .parrafo2 {
-        margin: auto;
-        padding: auto;
-        font-style: normal;
-        font-size: 30px;
-        font-weight: 200;
+    .parrafo {
+        @include margin-padding(auto, auto);
+        @include tipografia (normal, 200, 30px, justify-content);
         line-height: 30px;
     }
 }
-
 
 
 /*MOBILE*/
 @media (max-width: 320px) {
-    /*pagina=quienes somos*/
+
+    /*Página=quienes somos*/
     #presentacion {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        @include margin-padding(0, 10px);
+        @include flex(column, flex-start, flex-start);
 
         h1 {
-            font-style: italic;
-            font-weight: 700;
-            font-size: 40px;
-            margin: auto;
-            padding: auto;
+            @include margin-padding(auto, auto);
+            @include tipografia (italic, 700, 40px, left);
         }
     }
 
     .parrafo1 {
-        margin: auto;
-        padding: auto;
-        font-style: normal;
-        font-size: 25px;
-        font-weight: 300;
-        line-height: 25px;
-    }
-
-    .parrafo2 {
-        margin: auto;
-        padding: auto;
-        font-style: normal;
-        font-size: 25px;
-        font-weight: 300;
+        @include margin-padding(auto, auto);
+        @include tipografia (normal, 300, 25px, left);
         line-height: 25px;
     }
 }

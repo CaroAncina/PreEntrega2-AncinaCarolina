@@ -27,7 +27,7 @@
 }
 
 
-/****Section Productos****/
+/****Sección Productos****/
 #productos {
     @include margin-padding(40px, 20px);
 
@@ -64,8 +64,7 @@
 }
 
 
-
-
+//MEDIA QUERIES
 /*TABLET*/
 @media (max-width: 768px) {
 
@@ -105,7 +104,6 @@
     }
 
 }
-
 
 
 /*MOBILE*/
