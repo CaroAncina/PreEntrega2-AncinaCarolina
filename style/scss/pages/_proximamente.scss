@@ -37,6 +37,7 @@
 /*MOBILE*/
 @media (max-width: 320px) {
     .proximamente {
+        height: 80vh;
         @include margin-padding(auto, auto);
         @include flex(column, flex-start, flex-start);
 

@@ -111,7 +111,7 @@ header nav ul {
   padding: 10px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 header nav ul li {
@@ -608,69 +608,167 @@ footer .footercolumns .footerRedes h3 {
   margin: 30px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: 2fr 2fr;
   column-gap: 50px;
   row-gap: 20px;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
   height: auto;
 }
-#productosdestacados img {
+#productosdestacados figure {
+  position: relative;
   width: auto;
   height: auto;
-  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(9, 9, 9, 0.5);
+  cursor: pointer;
+}
+#productosdestacados figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-in-out;
 }
 #productosdestacados .tortas {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-#productosdestacados .tortas h2 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 35px;
+#productosdestacados .tortas .titulo_torta {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 45, 54, 0.6);
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
 }
-#productosdestacados .postres {
+#productosdestacados .tortas .titulo_torta h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+#productosdestacados .tortas figure:hover > .titulo_torta {
+  opacity: 1;
+  visibility: visible;
+}
+#productosdestacados .tortas figure:hover > .titulo_torta h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+#productosdestacados .tortas figure:hover > img {
+  transform: scale(1.3);
+}
+
+.postres {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-#productosdestacados .postres h2 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 35px;
+.postres .titulo_postre {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 45, 54, 0.6);
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
 }
-#productosdestacados .fiestas {
+.postres .titulo_postre h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+.postres figure:hover > .titulo_postre {
+  opacity: 1;
+  visibility: visible;
+}
+.postres figure:hover > .titulo_postre h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.postres figure:hover > img {
+  transform: scale(1.3);
+}
+
+.fiestas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-#productosdestacados .fiestas h2 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 35px;
+.fiestas .titulo_fiestas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 45, 54, 0.6);
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
 }
-#productosdestacados .variedades {
+.fiestas .titulo_fiestas h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+.fiestas figure:hover > .titulo_fiestas {
+  opacity: 1;
+  visibility: visible;
+}
+.fiestas figure:hover > .titulo_fiestas h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.fiestas figure:hover > img {
+  transform: scale(1.3);
+}
+
+.variedades {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-#productosdestacados .variedades h2 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 35px;
+.variedades .titulo_variedad {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 45, 54, 0.6);
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
 }
-#productosdestacados .variedades img {
-  width: 300px;
-  height: auto;
+.variedades .titulo_variedad h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+.variedades figure:hover > .titulo_variedad {
+  opacity: 1;
+  visibility: visible;
+}
+.variedades figure:hover > .titulo_variedad h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.variedades figure:hover > img {
+  transform: scale(1.3);
 }
 
 /*TABLET*/
@@ -692,12 +790,6 @@ footer .footercolumns .footerRedes h3 {
     column-gap: 5px;
     row-gap: 30px;
     height: auto;
-  }
-  #productosdestacados img {
-    box-shadow: 10px 5px 5px rgb(140, 139, 139);
-    width: auto;
-    height: auto;
-    margin-bottom: 10px;
   }
   #productosdestacados .tortas {
     display: flex;
@@ -748,31 +840,6 @@ footer .footercolumns .footerRedes h3 {
   #productosdestacados img {
     width: auto;
     height: auto;
-    margin-bottom: 10px;
-  }
-  #productosdestacados .tortas h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-    text-align: center;
-  }
-  #productosdestacados .postres h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-    text-align: center;
-  }
-  #productosdestacados .fiestas h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-    text-align: center;
-  }
-  #productosdestacados .variedades h2 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 30px;
-    text-align: center;
   }
 }
 /****Página=proximamente****/
@@ -831,6 +898,7 @@ footer .footercolumns .footerRedes h3 {
 /*MOBILE*/
 @media (max-width: 320px) {
   .proximamente {
+    height: 80vh;
     margin: auto;
     padding: auto;
     display: flex;

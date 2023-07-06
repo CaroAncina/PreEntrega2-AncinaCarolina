@@ -6,51 +6,175 @@
 
 #productosdestacados {
     @include margin-padding(30px, 20px);
-    @include grid(5fr 5fr, 2fr 2fr, 50px, 20px);
-    align-items: start;
+    @include grid(2fr 2fr, 2fr 2fr, 50px, 20px);
+    align-items: center;
+    justify-content: center;
     height: auto;
 
-    img {
+    figure {
+        position: relative;
         @include size(auto, auto);
-        margin-bottom: 10px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(9, 9, 9, 0.5);
+        cursor: pointer;
+
+        img {
+            @include size(100%, 100%);
+            transition: all 500ms ease-in-out;
+        }
     }
 
     .tortas {
-        @include flex(column, center, space-evenly);
+        position: relative;
+        @include flex(column, center, center);
 
-        h2 {
-            @include tipografia (italic, 500, 35px, center);
+        .titulo_torta {
+            position: absolute;
+            top: 0;
+            @include size(100%, 100%);
+            background: $color-principal;
+            transition: all 500ms ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+
+            & h2 {
+                color: #fff;
+                font-weight: 400;
+                margin-bottom: 120px;
+                transition: all 500ms ease-in-out;
+            }
+        }
+
+        figure:hover>.titulo_torta {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        figure:hover>.titulo_torta h2 {
+            margin-top: 70px;
+            margin-bottom: 15px;
+        }
+
+        figure:hover>img {
+            transform: scale(1.3);
         }
     }
 
-    .postres {
-        @include flex(column, center, space-evenly);
+}
 
-        h2 {
-            @include tipografia (italic, 500, 35px, center);
+.postres {
+    @include flex(column, center, center);
+
+    .titulo_postre {
+        position: absolute;
+        top: 0;
+        @include size(100%, 100%);
+        background: $color-principal;
+        transition: $transicion;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+
+        & h2 {
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 120px;
+            transition: $transicion;
         }
     }
 
-    .fiestas {
-        @include flex(column, center, space-evenly);
-
-        h2 {
-            @include tipografia (italic, 500, 35px, center);
-        }
+    figure:hover>.titulo_postre {
+        opacity: 1;
+        visibility: visible;
     }
 
-    .variedades {
-        @include flex(column, center, space-evenly);
+    figure:hover>.titulo_postre h2 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
 
-        h2 {
-            @include tipografia (italic, 500, 35px, center);
-        }
-
-        img {
-            @include size(300px, auto);
-        }
+    figure:hover>img {
+        transform: scale(1.3);
     }
 }
+
+.fiestas {
+
+    @include flex(column, center, center);
+
+    .titulo_fiestas {
+        position: absolute;
+        top: 0;
+        @include size(100%, 100%);
+        background: $color-principal;
+        transition: $transicion;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+
+        & h2 {
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 120px;
+            transition: $transicion;
+        }
+    }
+
+    figure:hover>.titulo_fiestas {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    figure:hover>.titulo_fiestas h2 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+
+    figure:hover>img {
+        transform: scale(1.3);
+    }
+
+}
+
+.variedades {
+
+    @include flex(column, center, center);
+
+    .titulo_variedad {
+        position: absolute;
+        top: 0;
+        @include size(100%, 100%);
+        background: $color-principal;
+        transition: $transicion;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+
+        & h2 {
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 120px;
+            transition: $transicion;
+        }
+    }
+
+    figure:hover>.titulo_variedad {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    figure:hover>.titulo_variedad h2 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+
+    figure:hover>img {
+        transform: scale(1.3);
+    }
+}
+
 
 
 //MEDIA QUERIES
@@ -65,12 +189,6 @@
         @include margin-padding(20px, 10px);
         @include grid(5fr, 2fr, 5px, 30px);
         height: auto;
-
-        img {
-            box-shadow: $img-shadow;
-            @include size(auto, auto);
-            margin-bottom: 10px;
-        }
 
         .tortas {
             @include flex(column, center, center);
@@ -106,31 +224,6 @@
 
         img {
             @include size(auto, auto);
-            margin-bottom: 10px;
-        }
-
-        .tortas {
-            h2 {
-                @include tipografia (italic, 500, 30px, center);
-            }
-        }
-
-        .postres {
-            h2 {
-                @include tipografia (italic, 500, 30px, center);
-            }
-        }
-
-        .fiestas {
-            h2 {
-                @include tipografia (italic, 500, 30px, center);
-            }
-        }
-
-        .variedades {
-            h2 {
-                @include tipografia (italic, 500, 30px, center);
-            }
         }
     }
 }

@@ -14,7 +14,7 @@ header {
     nav ul {
         list-style-type: none;
         @include margin-padding(15px, 10px);
-        @include flex(row, center, center);
+        @include flex(row, flex-start, center);
 
         li {
             @include margin-padding(5px, 30px);
