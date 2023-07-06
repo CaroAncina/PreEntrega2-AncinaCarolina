@@ -10,9 +10,7 @@
 .button {
     @include margin-padding(20px, 10px);
     @include tipografia (normal, 600, 50px, center);
-    border-width: 3px;
-    border-style: outset;
-    border-color: aquamarine;
+    @include border (3px, outset, aquamarine);
 }
 
 
@@ -21,9 +19,7 @@
 @media (max-width: 768px) {
     .button {
         @include tipografia (normal, 600, 35px, center);
-        border-width: 3px;
-        border-style: outset;
-        border-color: rgb(108, 158, 252);
+        @include border (3px, outset, rgb(108, 158, 252));
     }
 }
 
@@ -32,8 +28,6 @@
     .button {
         width: auto;
         @include tipografia (normal, 600, 35px, center);
-        border-width: 3px;
-        border-style: outset;
-        border-color: rgb(108, 158, 252);
+        @include border (3px, outset, rgb(108, 158, 252));
     }
 }

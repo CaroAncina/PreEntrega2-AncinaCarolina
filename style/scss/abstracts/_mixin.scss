@@ -5,6 +5,12 @@
     font-size: $size;
     text-align: $align;
 }
+//ESTILOS BORDES
+@mixin border ($width,$style,$color){
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
 
 //MARGIN Y PADDING//
 @mixin margin-padding($margin, $padding) {
@@ -17,7 +23,6 @@
     width: $width;
     height: $height;
 }
-
 
 //ESTILOS FLEX//
 @mixin flex($direction, $items, $content) {

@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./img/logoantojitos.png.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/css/stylefinal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +38,12 @@
 
     <main>
         <div class="portada">
-            <h1 class="tituloportada">Tienda de comestibles</h1>
+            <h1 class="tituloportada animate__animated animate__bounceIn">Tienda de comestibles</h1>
             <h2>Somos un emprendimiento <span class="palabra">Familiar</span></h2>
         </div>
 
         <section id="productos">
-            <div class="Producto1">
+            <div class="Producto1" data-aos="fade-right">
                 <div class="imagen1">
                     <img src="./img/galletitas.jpg" alt="Galletitas">
                 </div>
@@ -58,7 +60,7 @@
                 </article>
             </div>
 
-            <div class="Producto2">
+            <div class="Producto2" data-aos="fade-left">
                 <article class="descripcion2">
                     <h2>Pedidos con anticipacion</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptate, non explicabo
@@ -74,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="Producto3">
+            <div class="Producto3" data-aos="fade-right">
                 <div class="imagen3">
                     <img src="./img/pandulce.jpg" alt="Pan Dulce">
                 </div>
@@ -133,6 +135,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>

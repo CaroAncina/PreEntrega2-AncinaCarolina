@@ -5,10 +5,17 @@ $estilo-texto: "Zilla Slab", serif;
 $img-shadow:10px 5px 5px rgb(140, 139, 139);
 
 //Colors
-$color-primario-nav: #f68b7b;
-$color-secundario-nav:rgb(90, 255, 222);
-$color-primario-footer:#f1debd;
+$color-nav-primario:#FAACA8;
+$image-nav-primario:linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
 
-$color-fondo: #f6e7f7;
+$color-nav-secundario:#74EBD5;
+$image-nav-secundario:linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+
+$color-footer-primario:#FBDA61;
+$image-footer-primario:linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+
+$color-fondo:#fbf5fa;
 
 

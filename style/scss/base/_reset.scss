@@ -1,15 +1,12 @@
 /****selector universal****/
 * {
-    margin: 0;
-    padding: 0;
+    @include margin-padding(0,0);
     box-sizing: border-box;
 }
 
 /****estilos globales****/
 body {
-    background-image: url("../img/Fondo.jpg");
-    background: no-repeat;
-    background-color:$color-fondo;
+    background-color: $color-fondo;
     font-family: $estilo-texto;
     display: grid;
     min-height: 100vh;

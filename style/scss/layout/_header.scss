@@ -1,6 +1,7 @@
 /****header****/
 header {
-    background-color: $color-primario-nav;
+    background-color: $color-nav-primario;
+    background-image: $image-nav-primario;
     top: 0;
     width: 100%;
     @include flex(row, center, space-between);
@@ -27,7 +28,8 @@ header {
 /*TABLET*/
 @media (max-width: 768px) {
     header {
-        background-color: $color-secundario-nav;
+        background-color: $color-nav-secundario;
+        background-image: $image-nav-secundario;
         top: 0;
         width: 100%;
         @include flex(column, flex-start, center);
@@ -49,7 +51,8 @@ header {
 /*MOBILE*/
 @media (max-width: 320px) {
     header {
-        background-color: $color-secundario-nav;
+        background-color: $color-nav-secundario;
+        background-image: $image-nav-secundario;
         top: 0;
         width: 100%;
         @include flex(column, flex-start, center);

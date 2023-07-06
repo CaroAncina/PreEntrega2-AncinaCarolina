@@ -8,9 +8,7 @@
 
 /****estilos globales****/
 body {
-  background-image: url("../img/Fondo.jpg");
-  background: no-repeat;
-  background-color: #f6e7f7;
+  background-color: #fbf5fa;
   font-family: "Zilla Slab", serif;
   display: grid;
   min-height: 100vh;
@@ -75,24 +73,25 @@ body a {
 }
 /*Boton formulario*/
 .botones input {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /*TABLET*/
 @media (max-width: 768px) {
   .botones input {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 /*MOBILE*/
 @media (max-width: 320px) {
   .botones input {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 /****header****/
 header {
-  background-color: #f68b7b;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
   top: 0;
   width: 100%;
   display: flex;
@@ -127,7 +126,8 @@ header nav ul li {
 /*TABLET*/
 @media (max-width: 768px) {
   header {
-    background-color: rgb(90, 255, 222);
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
     top: 0;
     width: 100%;
     display: flex;
@@ -155,7 +155,8 @@ header nav ul li {
 /*MOBILE*/
 @media (max-width: 320px) {
   header {
-    background-color: rgb(90, 255, 222);
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
     top: 0;
     width: 100%;
     display: flex;
@@ -182,7 +183,8 @@ header nav ul li {
 }
 /****footer****/
 footer {
-  background-color: #f1debd;
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -900,10 +902,6 @@ footer .footercolumns .footerRedes h3 {
   justify-content: center;
   margin: 25px;
   padding: 20px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 40px;
-  text-align: left;
 }
 #formulario .contactanos h1 {
   margin: 15px;
@@ -925,8 +923,8 @@ footer .footercolumns .footerRedes h3 {
   margin: 20px;
   padding: 15px;
   font-style: italic;
-  font-weight: 300;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 50px;
   text-align: left;
 }
 #formulario fieldset .comentario textarea {
@@ -943,10 +941,6 @@ footer .footercolumns .footerRedes h3 {
     justify-content: flex-start;
     margin: auto;
     padding: 15px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 60px;
-    text-align: left;
   }
   #formulario .contactanos h1 {
     margin: auto;
@@ -969,7 +963,7 @@ footer .footercolumns .footerRedes h3 {
     padding: auto;
     font-style: italic;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 40px;
     text-align: left;
   }
 }
@@ -982,17 +976,13 @@ footer .footercolumns .footerRedes h3 {
     justify-content: flex-start;
     margin: auto;
     padding: 20px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    text-align: left;
   }
   #formulario .contactanos h1 {
     margin: auto;
     padding: auto;
     font-style: italic;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
     text-align: left;
   }
   #formulario .contactanos h2 {
@@ -1000,7 +990,7 @@ footer .footercolumns .footerRedes h3 {
     padding: auto;
     font-style: italic;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 30px;
     text-align: left;
   }
   #formulario fieldset {
@@ -1008,14 +998,12 @@ footer .footercolumns .footerRedes h3 {
     padding: auto;
     font-style: italic;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
   }
   #formulario fieldset .comentario textarea {
     width: 250px;
     height: 150px;
-    height: 150px;
-    width: 250px;
   }
 }
 

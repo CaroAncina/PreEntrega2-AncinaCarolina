@@ -1,6 +1,8 @@
 /****footer****/
 footer {
-    background-color: $color-primario-footer;
+    background-color: $color-footer-primario;
+    background-image: $image-footer-primario;
+
     @include flex(column, center, center);
     width: 100%;
     padding: 30px 0;

@@ -2,7 +2,6 @@
 #formulario {
     @include flex(column, flex-start, center);
     @include margin-padding(25px, 20px);
-    @include tipografia (normal, 300, 40px, left);
 
     .contactanos h1 {
         @include margin-padding(15px, 10px);
@@ -16,7 +15,7 @@
 
     fieldset {
         @include margin-padding(20px, 15px);
-        @include tipografia (italic, 300, 40px, left);
+        @include tipografia (italic, 400, 50px, left);
 
         .comentario textarea {
             @include size (50%, 200px);
@@ -31,7 +30,6 @@
     #formulario {
         @include flex(column, flex-start, flex-start);
         @include margin-padding(auto, 15px);
-        @include tipografia (normal, 300, 60px, left);
 
         .contactanos h1 {
             @include margin-padding(auto, auto);
@@ -45,7 +43,7 @@
 
         fieldset {
             @include margin-padding(auto, auto);
-            @include tipografia (italic, 500, 2rem, left);
+            @include tipografia (italic, 500, 40px, left);
         }
     }
 }
@@ -56,26 +54,23 @@
     #formulario {
         @include flex(column, flex-start, flex-start);
         @include margin-padding(auto, 20px);
-        @include tipografia (normal, 300, 40px, left);
 
         .contactanos h1 {
             @include margin-padding(auto, auto);
-            @include tipografia (italic, 700, 30px, left);
+            @include tipografia (italic, 700, 35px, left);
         }
 
         .contactanos h2 {
             @include margin-padding(auto, auto);
-            @include tipografia (italic, 500, 25px, left);
+            @include tipografia (italic, 500, 30px, left);
         }
 
         fieldset {
             @include margin-padding(auto, auto);
-            @include tipografia (italic, 500, 20px, left);
+            @include tipografia (italic, 500, 30px, left);
 
             .comentario textarea {
                 @include size (250px, 150px);
-                height: 150px;
-                width: 250px;
             }
         }
     }
