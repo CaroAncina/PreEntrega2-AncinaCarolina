@@ -20,16 +20,13 @@
         max-width: 90%;
         margin: 30px 0;
     }
-
-    .palabra {
-        font-weight: 800;
-    }
 }
 
 
 /****Sección Productos****/
 #productos {
     @include margin-padding(40px, 20px);
+    @include flex(column, center, space-around);
 
     h2 {
         @include tipografia (italic, 500, 35px, left);
@@ -50,17 +47,24 @@
 
 .Producto1 {
     @include margin-padding(20px, 10px);
-    @include flex(row, flex-start, space-around);
+    @include flex(row, center, space-around);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
 }
 
 .Producto2 {
     @include margin-padding(20px, 10px);
-    @include flex(row, flex-start, space-around);
+    @include flex(row, center, space-around);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
 }
 
 .Producto3 {
     @include margin-padding(20px, 10px);
-    @include flex(row, flex-start, space-around);
+    @include flex(row, center, space-around);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
 }
 
 
@@ -76,17 +80,23 @@
     .Producto1 {
         @include margin-padding(20px, 10px);
         @include flex(row, center, space-around);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
     }
 
     .Producto2 {
         @include margin-padding(20px, 10px);
         @include flex(row, center, space-around);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
 
     }
 
     .Producto3 {
         @include margin-padding(20px, 10px);
         @include flex(row, center, space-around);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
     }
 
     #productos {
@@ -117,16 +127,22 @@
     .Producto1 {
         @include margin-padding(20px, 10px);
         @include flex(column-reverse, center, center);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
     }
 
     .Producto2 {
         @include margin-padding(20px, 10px);
         @include flex(column, center, center);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
     }
 
     .Producto3 {
         @include margin-padding(20px, 10px);
         @include flex(column-reverse, center, center);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
     }
 
     #productos {
