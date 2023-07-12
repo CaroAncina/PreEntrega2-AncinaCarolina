@@ -37,7 +37,8 @@
     }
 
     img {
-        @include margin-padding(10px, 5px);
+        @include margin-padding(15px, 10px);
+        border-radius: 20px;
     }
 
     article {
@@ -50,8 +51,8 @@
     @include flex(row, center, space-around);
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-
 }
+
 
 .Producto2 {
     @include margin-padding(20px, 10px);
@@ -105,11 +106,12 @@
         }
 
         p {
-            @include tipografia (normal, 400, 25px, left);
+            @include tipografia (normal, 400, 24px, left);
         }
 
         img {
-            @include margin-padding(10px, 20px);
+            @include margin-padding(10px, 10px);
+            border-radius: 25px;
         }
     }
 
@@ -126,32 +128,38 @@
 
     .Producto1 {
         @include margin-padding(20px, 10px);
-        @include flex(column-reverse, center, center);
+        @include flex(column, center, center);
         border-radius: $border-radius;
         box-shadow: $box-shadow;
     }
 
     .Producto2 {
         @include margin-padding(20px, 10px);
-        @include flex(column, center, center);
+        @include flex(column-reverse, center, center);
         border-radius: $border-radius;
         box-shadow: $box-shadow;
     }
 
     .Producto3 {
         @include margin-padding(20px, 10px);
-        @include flex(column-reverse, center, center);
+        @include flex(column, center, center);
         border-radius: $border-radius;
         box-shadow: $box-shadow;
     }
 
     #productos {
+        margin-top: 2px;
+
         h2 {
-            @include tipografia (italic, 600, 2rem, center);
+            @include tipografia (italic, 600, 2.5rem, center);
         }
 
         p {
-            @include tipografia (normal, 500, 2rem, center);
+            @include tipografia (normal, 500, 2.5rem, center);
+        }
+
+        img {
+            border-radius: 50px;
         }
     }
 
@@ -160,11 +168,11 @@
         @include flex(column, center, center);
 
         h1 {
-            @include tipografia (italic, 600, 40px, center);
+            @include tipografia (italic, 600, 50px, center);
         }
 
         h2 {
-            @include tipografia (normal, 500, 35px, center);
+            @include tipografia (normal, 500, 40px, center);
         }
     }
 }

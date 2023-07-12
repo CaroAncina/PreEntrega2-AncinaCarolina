@@ -7,14 +7,15 @@ footer {
     width: 100%;
     padding: 30px 0;
 
-    .titulofooter {
-        @include margin-padding(5px, 2px);
-    }
-
     .footercolumns {
         @include flex(row, flex-start, space-around);
         width: 100%;
         padding-bottom: 20px;
+
+        .titulofooter {
+            @include margin-padding(5px, 2px);
+            @include tipografia (italic, 300, 30px, left);
+        }
 
         .footerEnlaces {
             ul {
@@ -74,6 +75,11 @@ footer {
         width: 100%;
         padding-bottom: 20px;
 
+        .titulofooter {
+            @include margin-padding(5px, 2px);
+            @include tipografia (italic, 300, 30px, left);
+        }
+
         .footerRedes {
             h3 {
                 @include tipografia (normal, 500, 25px, center);
@@ -93,7 +99,35 @@ footer {
         .footerRedes {
             h3 {
                 @include margin-padding(5px, 2px);
-                @include tipografia (normal, 500, 25px, center);
+                @include tipografia (normal, 500, 30px, center);
+            }
+        }
+
+        .footerEnlaces {
+            ul {
+                @include margin-padding(5px, 2px);
+
+                li {
+                    @include tipografia (normal, 400, 22.5rem, left);
+                    padding: 5px;
+                }
+            }
+        }
+
+        .footerPagos {
+            ul {
+                @include margin-padding(5px, 2px);
+                list-style: none;
+                @include flex(column, flex-start, space-around);
+
+                li {
+                    @include tipografia (normal, 400, 40px, left);
+
+                    img {
+                        width: 50%;
+                        margin-right: 10px;
+                    }
+                }
             }
         }
     }

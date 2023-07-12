@@ -15,7 +15,7 @@
 
     fieldset {
         @include margin-padding(20px, 15px);
-        @include tipografia (italic, 400, 50px, left);
+        @include tipografia (italic, 400, 2.5rem, left);
 
         .comentario textarea {
             @include size (50%, 200px);
@@ -43,7 +43,7 @@
 
         fieldset {
             @include margin-padding(auto, auto);
-            @include tipografia (italic, 500, 40px, left);
+            @include tipografia (italic, 500, 2rem, left);
         }
     }
 }
@@ -66,10 +66,11 @@
         }
 
         fieldset {
-            @include margin-padding(auto, auto);
-            @include tipografia (italic, 500, 30px, left);
+            margin-left: 5px;
+            @include tipografia (italic, 500, 2rem, left);
 
             .comentario textarea {
+                margin-left: 5px;
                 @include size (250px, 150px);
             }
         }

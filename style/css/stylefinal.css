@@ -192,10 +192,6 @@ footer {
   width: 100%;
   padding: 30px 0;
 }
-footer .titulofooter {
-  margin: 5px;
-  padding: 2px;
-}
 footer .footercolumns {
   display: flex;
   flex-direction: row;
@@ -203,6 +199,14 @@ footer .footercolumns {
   justify-content: space-around;
   width: 100%;
   padding-bottom: 20px;
+}
+footer .footercolumns .titulofooter {
+  margin: 5px;
+  padding: 2px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: left;
 }
 footer .footercolumns .footerEnlaces ul {
   margin: 5px;
@@ -265,6 +269,14 @@ footer .footercolumns .footerRedes h3 {
     width: 100%;
     padding-bottom: 20px;
   }
+  .footercolumns .titulofooter {
+    margin: 5px;
+    padding: 2px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: left;
+  }
   .footercolumns .footerRedes h3 {
     font-style: normal;
     font-weight: 500;
@@ -287,8 +299,38 @@ footer .footercolumns .footerRedes h3 {
     padding: 2px;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
+  }
+  .footercolumns .footerEnlaces ul {
+    margin: 5px;
+    padding: 2px;
+  }
+  .footercolumns .footerEnlaces ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.5rem;
+    text-align: left;
+    padding: 5px;
+  }
+  .footercolumns .footerPagos ul {
+    margin: 5px;
+    padding: 2px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .footercolumns .footerPagos ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: left;
+  }
+  .footercolumns .footerPagos ul li img {
+    width: 50%;
+    margin-right: 10px;
   }
 }
 /**INDEX*/
@@ -347,8 +389,9 @@ footer .footercolumns .footerRedes h3 {
   text-align: left;
 }
 #productos img {
-  margin: 10px;
-  padding: 5px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 20px;
 }
 #productos article {
   margin: 10px;
@@ -433,12 +476,13 @@ footer .footercolumns .footerRedes h3 {
   #productos p {
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 24px;
     text-align: left;
   }
   #productos img {
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 25px;
   }
 }
 /*MOBILE*/
@@ -451,7 +495,7 @@ footer .footercolumns .footerRedes h3 {
     margin: 20px;
     padding: 10px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 80px;
@@ -461,7 +505,7 @@ footer .footercolumns .footerRedes h3 {
     margin: 20px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     border-radius: 80px;
@@ -471,23 +515,29 @@ footer .footercolumns .footerRedes h3 {
     margin: 20px;
     padding: 10px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 80px;
     box-shadow: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
   }
+  #productos {
+    margin-top: 2px;
+  }
   #productos h2 {
     font-style: italic;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   #productos p {
     font-style: normal;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
+  }
+  #productos img {
+    border-radius: 50px;
   }
   .portada {
     height: 40vh;
@@ -499,13 +549,13 @@ footer .footercolumns .footerRedes h3 {
   .portada h1 {
     font-style: italic;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
   }
   .portada h2 {
     font-style: normal;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
   }
 }
@@ -599,7 +649,7 @@ footer .footercolumns .footerRedes h3 {
   font-style: italic;
   font-weight: 800;
   font-size: 50px;
-  text-align: center;
+  text-align: left;
   margin: 30px;
   padding: 20px;
 }
@@ -665,14 +715,14 @@ footer .footercolumns .footerRedes h3 {
 #productosdestacados .tortas figure:hover > img {
   transform: scale(1.3);
 }
-
-.postres {
+#productosdestacados .postres {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.postres .titulo_postre {
+#productosdestacados .postres .titulo_postres {
   position: absolute;
   top: 0;
   width: 100%;
@@ -683,31 +733,31 @@ footer .footercolumns .footerRedes h3 {
   visibility: hidden;
   text-align: center;
 }
-.postres .titulo_postre h2 {
+#productosdestacados .postres .titulo_postres h2 {
   color: #fff;
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 500ms ease-in-out;
 }
-.postres figure:hover > .titulo_postre {
+#productosdestacados .postres figure:hover > .titulo_postres {
   opacity: 1;
   visibility: visible;
 }
-.postres figure:hover > .titulo_postre h2 {
+#productosdestacados .postres figure:hover > .titulo_postres h2 {
   margin-top: 70px;
   margin-bottom: 15px;
 }
-.postres figure:hover > img {
+#productosdestacados .postres figure:hover > img {
   transform: scale(1.3);
 }
-
-.fiestas {
+#productosdestacados .fiestas {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.fiestas .titulo_fiestas {
+#productosdestacados .fiestas .titulo_fiestas {
   position: absolute;
   top: 0;
   width: 100%;
@@ -718,31 +768,31 @@ footer .footercolumns .footerRedes h3 {
   visibility: hidden;
   text-align: center;
 }
-.fiestas .titulo_fiestas h2 {
+#productosdestacados .fiestas .titulo_fiestas h2 {
   color: #fff;
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 500ms ease-in-out;
 }
-.fiestas figure:hover > .titulo_fiestas {
+#productosdestacados .fiestas figure:hover > .titulo_fiestas {
   opacity: 1;
   visibility: visible;
 }
-.fiestas figure:hover > .titulo_fiestas h2 {
+#productosdestacados .fiestas figure:hover > .titulo_fiestas h2 {
   margin-top: 70px;
   margin-bottom: 15px;
 }
-.fiestas figure:hover > img {
+#productosdestacados .fiestas figure:hover > img {
   transform: scale(1.3);
 }
-
-.variedades {
+#productosdestacados .variedades {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.variedades .titulo_variedad {
+#productosdestacados .variedades .titulo_variedad {
   position: absolute;
   top: 0;
   width: 100%;
@@ -753,21 +803,21 @@ footer .footercolumns .footerRedes h3 {
   visibility: hidden;
   text-align: center;
 }
-.variedades .titulo_variedad h2 {
+#productosdestacados .variedades .titulo_variedad h2 {
   color: #fff;
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 500ms ease-in-out;
 }
-.variedades figure:hover > .titulo_variedad {
+#productosdestacados .variedades figure:hover > .titulo_variedad {
   opacity: 1;
   visibility: visible;
 }
-.variedades figure:hover > .titulo_variedad h2 {
+#productosdestacados .variedades figure:hover > .titulo_variedad h2 {
   margin-top: 70px;
   margin-bottom: 15px;
 }
-.variedades figure:hover > img {
+#productosdestacados .variedades figure:hover > img {
   transform: scale(1.3);
 }
 
@@ -792,24 +842,28 @@ footer .footercolumns .footerRedes h3 {
     height: auto;
   }
   #productosdestacados .tortas {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   #productosdestacados .postres {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   #productosdestacados .fiestas {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   #productosdestacados .variedades {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -953,7 +1007,7 @@ footer .footercolumns .footerRedes h3 {
   padding: 15px;
   font-style: italic;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 2.5rem;
   text-align: left;
 }
 #formulario fieldset .comentario textarea {
@@ -992,7 +1046,7 @@ footer .footercolumns .footerRedes h3 {
     padding: auto;
     font-style: italic;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2rem;
     text-align: left;
   }
 }
@@ -1023,14 +1077,14 @@ footer .footercolumns .footerRedes h3 {
     text-align: left;
   }
   #formulario fieldset {
-    margin: auto;
-    padding: auto;
+    margin-left: 5px;
     font-style: italic;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: left;
   }
   #formulario fieldset .comentario textarea {
+    margin-left: 5px;
     width: 250px;
     height: 150px;
   }
