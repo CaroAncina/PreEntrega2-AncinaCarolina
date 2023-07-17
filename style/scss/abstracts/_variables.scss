@@ -19,12 +19,18 @@ $image-footer-primario: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 $color-fondo: #fbf5fa;
 
 //Estilo sombras
-$border-radius: 80px;
-$box-shadow: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
+$border-radius-index: 80px;
+$box-shadow-index: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
+
+$border-radius-figure:6px;
+$border-shadow-figure:0px 15px 25px rgba(9, 9, 9, 0.5);
 
 //Estilo transicion
 $transicion: all 500ms ease-in-out;
-$color-principal:rgba(5, 45, 54, 0.6);
+$color-transicion:rgba(5, 45, 54, 0.6);
+$transform:scale(1.3);
+
+
 
 
 

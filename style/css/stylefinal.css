@@ -658,9 +658,9 @@ footer .footercolumns .footerRedes h3 {
   margin: 30px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 2fr 2fr;
-  column-gap: 50px;
+  column-gap: 30px;
   row-gap: 20px;
   align-items: center;
   justify-content: center;
@@ -694,9 +694,9 @@ footer .footercolumns .footerRedes h3 {
   height: 100%;
   background: rgba(5, 45, 54, 0.6);
   transition: all 500ms ease-in-out;
+  text-align: center;
   opacity: 0;
   visibility: hidden;
-  text-align: center;
 }
 #productosdestacados .tortas .titulo_torta h2 {
   color: #fff;
@@ -785,14 +785,14 @@ footer .footercolumns .footerRedes h3 {
 #productosdestacados .fiestas figure:hover > img {
   transform: scale(1.3);
 }
-#productosdestacados .variedades {
+#productosdestacados .cookies {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#productosdestacados .variedades .titulo_variedad {
+#productosdestacados .cookies .titulo_cookies {
   position: absolute;
   top: 0;
   width: 100%;
@@ -803,21 +803,93 @@ footer .footercolumns .footerRedes h3 {
   visibility: hidden;
   text-align: center;
 }
-#productosdestacados .variedades .titulo_variedad h2 {
+#productosdestacados .cookies .titulo_cookies h2 {
   color: #fff;
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 500ms ease-in-out;
 }
-#productosdestacados .variedades figure:hover > .titulo_variedad {
+#productosdestacados .cookies figure:hover > .titulo_cookies {
   opacity: 1;
   visibility: visible;
 }
-#productosdestacados .variedades figure:hover > .titulo_variedad h2 {
+#productosdestacados .cookies figure:hover > .titulo_cookies h2 {
   margin-top: 70px;
   margin-bottom: 15px;
 }
-#productosdestacados .variedades figure:hover > img {
+#productosdestacados .cookies figure:hover > img {
+  transform: scale(1.3);
+}
+
+.tartas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tartas .titulo_tartas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 45, 54, 0.6);
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.tartas .titulo_tartas h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+.tartas figure:hover > .titulo_tartas {
+  opacity: 1;
+  visibility: visible;
+}
+.tartas figure:hover > .titulo_tartas h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.tartas figure:hover > img {
+  transform: scale(1.3);
+}
+
+.variedades {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.variedades .titulo_variedades {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 45, 54, 0.6);
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.variedades .titulo_variedades h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+.variedades figure:hover > .titulo_variedades {
+  opacity: 1;
+  visibility: visible;
+}
+.variedades figure:hover > .titulo_variedades h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.variedades figure:hover > img {
   transform: scale(1.3);
 }
 
@@ -835,10 +907,10 @@ footer .footercolumns .footerRedes h3 {
     margin: 20px;
     padding: 10px;
     display: grid;
-    grid-template-columns: 5fr;
-    grid-template-rows: 2fr;
-    column-gap: 5px;
-    row-gap: 30px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
     height: auto;
   }
   #productosdestacados .tortas {
@@ -884,9 +956,9 @@ footer .footercolumns .footerRedes h3 {
     margin: 10px;
     padding: 10px;
     display: grid;
-    grid-template-columns: 5fr;
-    grid-template-rows: 2fr;
-    column-gap: 5px;
+    grid-template-columns: 4fr;
+    grid-template-rows: 1fr;
+    column-gap: 1px;
     row-gap: 30px;
     height: auto;
     justify-content: center;

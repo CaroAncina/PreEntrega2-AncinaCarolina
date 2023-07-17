@@ -49,23 +49,23 @@
 .Producto1 {
     @include margin-padding(20px, 10px);
     @include flex(row, center, space-around);
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: $border-radius-index;
+    box-shadow: $box-shadow-index;
 }
 
 
 .Producto2 {
     @include margin-padding(20px, 10px);
     @include flex(row, center, space-around);
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: $border-radius-index;
+    box-shadow: $box-shadow-index;
 }
 
 .Producto3 {
     @include margin-padding(20px, 10px);
     @include flex(row, center, space-around);
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: $border-radius-index;
+    box-shadow: $box-shadow-index;
 }
 
 
@@ -81,23 +81,23 @@
     .Producto1 {
         @include margin-padding(20px, 10px);
         @include flex(row, center, space-around);
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        border-radius: $border-radius-index;
+        box-shadow: $box-shadow-index;
     }
 
     .Producto2 {
         @include margin-padding(20px, 10px);
         @include flex(row, center, space-around);
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        border-radius: $border-radius-index;
+        box-shadow: $box-shadow-index;
 
     }
 
     .Producto3 {
         @include margin-padding(20px, 10px);
         @include flex(row, center, space-around);
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        border-radius: $border-radius-index;
+        box-shadow: $box-shadow-index;
     }
 
     #productos {
@@ -129,22 +129,22 @@
     .Producto1 {
         @include margin-padding(20px, 10px);
         @include flex(column, center, center);
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        border-radius: $border-radius-index;
+        box-shadow: $box-shadow-index;
     }
 
     .Producto2 {
         @include margin-padding(20px, 10px);
         @include flex(column-reverse, center, center);
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        border-radius: $border-radius-index;
+        box-shadow: $box-shadow-index;
     }
 
     .Producto3 {
         @include margin-padding(20px, 10px);
         @include flex(column, center, center);
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        border-radius: $border-radius-index;
+        box-shadow: $box-shadow-index;
     }
 
     #productos {

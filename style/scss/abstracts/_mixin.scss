@@ -41,6 +41,16 @@
     row-gap: $row-gap;
 }
 
+//ESTILOS TRANSICION//
+@mixin transicion($opacity, $visibility) {
+    opacity: $opacity;
+    visibility: $visibility;
+}
+
+@mixin margin-titulo($margin-top, $margin-bottom) {
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
 
 
 
