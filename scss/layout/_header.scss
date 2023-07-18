@@ -9,6 +9,7 @@ header {
     .logo {
         @include size (110px, 120px);
         @include margin-padding(5px, 5px);
+        border-radius: 8px;
     }
 
     nav ul {

@@ -113,6 +113,7 @@ header .logo {
   height: 120px;
   margin: 5px;
   padding: 5px;
+  border-radius: 8px;
 }
 header nav ul {
   list-style-type: none;
@@ -204,7 +205,7 @@ footer {
 footer .footercolumns {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-around;
   width: 100%;
   padding-bottom: 20px;
@@ -298,7 +299,7 @@ footer .footercolumns .footerRedes h3 {
   .footercolumns {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-around;
     width: 100%;
     padding-bottom: 20px;
@@ -306,21 +307,35 @@ footer .footercolumns .footerRedes h3 {
   .footercolumns .footerRedes h3 {
     margin: 5px;
     padding: 2px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
     text-align: center;
+  }
+  .footercolumns .footerEnlaces h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: left;
   }
   .footercolumns .footerEnlaces ul {
     margin: 5px;
     padding: 2px;
   }
-  .footercolumns .footerEnlaces ul li {
+  .footercolumns .footerEnlaces ul li a {
     font-style: normal;
-    font-weight: 400;
-    font-size: 22.5rem;
+    font-weight: 500;
+    font-size: 30px;
     text-align: left;
     padding: 5px;
+  }
+  .footercolumns .footerPagos h3 {
+    margin: 5px;
+    padding: 2px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: left;
   }
   .footercolumns .footerPagos ul {
     margin: 5px;
@@ -328,17 +343,17 @@ footer .footercolumns .footerRedes h3 {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
   }
-  .footercolumns .footerPagos ul li {
+  .footercolumns .footerPagos ul li span {
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    text-align: left;
+    font-size: 30px;
+    text-align: justify;
   }
   .footercolumns .footerPagos ul li img {
-    width: 50%;
+    width: 100%;
     margin-right: 10px;
   }
 }
@@ -346,16 +361,13 @@ footer .footercolumns .footerRedes h3 {
 /****Portada****/
 .portada {
   height: 40vh;
-  margin: 20px;
-  padding: 10px;
+  background: url(../img/fondo-portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.portada .tituloportada {
-  margin: 5px;
-  padding: 2px;
 }
 .portada h1 {
   margin: 5px;
@@ -373,17 +385,16 @@ footer .footercolumns .footerRedes h3 {
   font-size: 40px;
   text-align: center;
   max-width: 90%;
-  margin: 30px 0;
 }
 
 /****Sección Productos****/
 #productos {
-  margin: 40px;
-  padding: 20px;
+  margin: 100px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 #productos h2 {
   font-style: italic;
@@ -408,8 +419,8 @@ footer .footercolumns .footerRedes h3 {
 }
 
 .Producto1 {
-  margin: 20px;
-  padding: 10px;
+  margin: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -419,8 +430,8 @@ footer .footercolumns .footerRedes h3 {
 }
 
 .Producto2 {
-  margin: 20px;
-  padding: 10px;
+  margin: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -430,8 +441,8 @@ footer .footercolumns .footerRedes h3 {
 }
 
 .Producto3 {
-  margin: 20px;
-  padding: 10px;
+  margin: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -442,39 +453,8 @@ footer .footercolumns .footerRedes h3 {
 
 /*TABLET*/
 @media (max-width: 768px) {
-  /*Index*/
   .palabra {
     font-weight: 800;
-  }
-  .Producto1 {
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 80px;
-    box-shadow: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
-  }
-  .Producto2 {
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 80px;
-    box-shadow: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
-  }
-  .Producto3 {
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 80px;
-    box-shadow: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
   }
   #productos h2 {
     font-style: italic;
@@ -491,18 +471,12 @@ footer .footercolumns .footerRedes h3 {
   #productos img {
     margin: 10px;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 20px;
   }
 }
 /*MOBILE*/
 @media (max-width: 320px) {
-  /*Index*/
-  .palabra {
-    font-weight: 800;
-  }
   .Producto1 {
-    margin: 20px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -511,8 +485,6 @@ footer .footercolumns .footerRedes h3 {
     box-shadow: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
   }
   .Producto2 {
-    margin: 20px;
-    padding: 10px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -521,8 +493,6 @@ footer .footercolumns .footerRedes h3 {
     box-shadow: rgba(38, 38, 60, 0.25) 0px 6px 12px -2px, rgba(7, 7, 7, 0.3) 0px 3px 7px -3px;
   }
   .Producto3 {
-    margin: 20px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;

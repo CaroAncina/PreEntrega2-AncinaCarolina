@@ -1,13 +1,12 @@
 /**INDEX*/
 /****Portada****/
+
 .portada {
     height: 40vh;
-    @include margin-padding(20px, 10px);
+    background: url(../img/fondo-portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     @include flex(column, center, center);
-
-    .tituloportada {
-        @include margin-padding(5px, 2px);
-    }
 
     h1 {
         @include margin-padding(5px, 2px);
@@ -18,15 +17,14 @@
         @include margin-padding(5px, 2px);
         @include tipografia (normal, 500, 40px, center);
         max-width: 90%;
-        margin: 30px 0;
     }
 }
 
 
 /****Sección Productos****/
 #productos {
-    @include margin-padding(40px, 20px);
-    @include flex(column, center, space-around);
+    @include margin-padding(100px, 10px);
+    @include flex(column, center, center);
 
     h2 {
         @include tipografia (italic, 500, 35px, left);
@@ -47,7 +45,7 @@
 }
 
 .Producto1 {
-    @include margin-padding(20px, 10px);
+    @include margin-padding(10px, 5px);
     @include flex(row, center, space-around);
     border-radius: $border-radius-index;
     box-shadow: $box-shadow-index;
@@ -55,14 +53,14 @@
 
 
 .Producto2 {
-    @include margin-padding(20px, 10px);
+    @include margin-padding(10px, 5px);
     @include flex(row, center, space-around);
     border-radius: $border-radius-index;
     box-shadow: $box-shadow-index;
 }
 
 .Producto3 {
-    @include margin-padding(20px, 10px);
+    @include margin-padding(10px, 5px);
     @include flex(row, center, space-around);
     border-radius: $border-radius-index;
     box-shadow: $box-shadow-index;
@@ -72,32 +70,8 @@
 //MEDIA QUERIES
 /*TABLET*/
 @media (max-width: 768px) {
-
-    /*Index*/
     .palabra {
         font-weight: 800;
-    }
-
-    .Producto1 {
-        @include margin-padding(20px, 10px);
-        @include flex(row, center, space-around);
-        border-radius: $border-radius-index;
-        box-shadow: $box-shadow-index;
-    }
-
-    .Producto2 {
-        @include margin-padding(20px, 10px);
-        @include flex(row, center, space-around);
-        border-radius: $border-radius-index;
-        box-shadow: $box-shadow-index;
-
-    }
-
-    .Producto3 {
-        @include margin-padding(20px, 10px);
-        @include flex(row, center, space-around);
-        border-radius: $border-radius-index;
-        box-shadow: $box-shadow-index;
     }
 
     #productos {
@@ -111,37 +85,29 @@
 
         img {
             @include margin-padding(10px, 10px);
-            border-radius: 25px;
+            border-radius: 20px;
         }
     }
-
 }
-
 
 /*MOBILE*/
 @media (max-width: 320px) {
-
-    /*Index*/
-    .palabra {
-        font-weight: 800;
-    }
-
     .Producto1 {
-        @include margin-padding(20px, 10px);
+
         @include flex(column, center, center);
         border-radius: $border-radius-index;
         box-shadow: $box-shadow-index;
     }
 
     .Producto2 {
-        @include margin-padding(20px, 10px);
+
         @include flex(column-reverse, center, center);
         border-radius: $border-radius-index;
         box-shadow: $box-shadow-index;
     }
 
     .Producto3 {
-        @include margin-padding(20px, 10px);
+
         @include flex(column, center, center);
         border-radius: $border-radius-index;
         box-shadow: $box-shadow-index;
