@@ -1,0 +1,95 @@
+/****Página:Quienes Somos****/
+#presentacion {
+
+    @include flex (column, center, center);
+    height: 100vh;
+    background: url(../img/fondo-pasteleria.jpg) center;
+    background-size: cover;
+
+    .contenedor {
+        @include margin-padding(10px, 10px);
+        color: #fff;
+        text-align: center;
+        border: $border-filtro;
+        box-shadow: $box-shadow-filtro;
+        backdrop-filter: $backdrop-filtro;
+
+        h1 {
+            @include margin-padding(10px, 10px);
+            @include tipografia (italic, 600, 50px, left);
+            color: #fff;
+        }
+
+        p {
+            @include margin-padding(10px, 5px);
+            @include tipografia (normal, 500, 2em, left);
+            line-height: 50px;
+            word-spacing: 3px;
+            color: #fff;
+        }
+    }
+}
+
+
+//MEDIA QUERIES
+/*TABLET*/
+@media (max-width: 768px) {
+    #presentacion {
+        height: auto;
+
+        .contenedor {
+            @include margin-padding(15px, 10px);
+            color: #fff;
+            text-align: center;
+            border: $border-filtro;
+            box-shadow: $box-shadow-filtro;
+            backdrop-filter: $backdrop-filtro;
+
+
+            h1 {
+                @include margin-padding(10px, 10px);
+                @include tipografia (italic, 500, 60px, left);
+                color: #fff;
+            }
+
+            p {
+                @include margin-padding(10px, 5px);
+                @include tipografia (normal, 400, 2em, left);
+                line-height: 50px;
+                word-spacing: 3px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/*MOBILE*/
+@media (max-width: 320px) {
+    #presentacion {
+        height: 180vh;
+
+        .contenedor {
+            @include margin-padding(15px, 10px);
+            color: #fff;
+            text-align: center;
+            border: $border-filtro;
+            box-shadow: $box-shadow-filtro;
+            backdrop-filter: $backdrop-filtro;
+
+            h1 {
+                @include margin-padding(5px, 5px);
+                @include tipografia (italic, 600, 50px, center);
+                color: #fff;
+            }
+
+            p {
+                @include margin-padding(5px, 5px);
+                @include tipografia (normal, 500, 2.5em, center);
+                line-height: 50px;
+                word-spacing: 1px;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,6 +1,11 @@
 /*Boton formulario*/
 .botones input {
-    font-size: 30px;
+    font-size: 25px;
+    width: 25%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    background-color: rgb(243, 249, 255);
+    border-radius: 10px;
 }
 
 
@@ -15,6 +20,6 @@
 /*MOBILE*/
 @media (max-width: 320px) {
     .botones input {
-        font-size: 25px;
+        font-size: 35px;
     }
 }

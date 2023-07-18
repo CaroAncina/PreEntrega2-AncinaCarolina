@@ -10,7 +10,8 @@
 .button {
     @include margin-padding(20px, 10px);
     @include tipografia (normal, 600, 50px, center);
-    @include border (3px, outset, aquamarine);
+    @include border (3px, outset, rgb(204, 247, 232));
+    color: rgb(0, 0, 0);
 }
 
 
@@ -18,8 +19,10 @@
 /*TABLET*/
 @media (max-width: 768px) {
     .button {
-        @include tipografia (normal, 600, 35px, center);
-        @include border (3px, outset, rgb(108, 158, 252));
+        width: auto;
+        @include tipografia (normal, 600, 45px, center);
+        @include border (3px, outset, rgb(71, 71, 72));
+        color: rgb(0, 0, 0);
     }
 }
 
@@ -27,7 +30,8 @@
 @media (max-width: 320px) {
     .button {
         width: auto;
-        @include tipografia (normal, 600, 35px, center);
-        @include border (3px, outset, rgb(108, 158, 252));
+        @include tipografia (normal, 600, 40px, center);
+        @include border (3px, outset, rgb(71, 71, 72));
+        color: rgb(0, 0, 0);
     }
 }

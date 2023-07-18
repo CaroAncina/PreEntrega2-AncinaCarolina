@@ -1,0 +1,54 @@
+/****Página=proximamente****/
+#productos-salados {
+    .proximamente {
+        @include margin-padding(60px, 40px);
+        @include flex(column, flex-start, justify content);
+
+        h1 {
+            @include tipografia (italic, 800, 50px, left);
+            @include margin-padding(10px, 10px);
+        }
+
+        h2 {
+            @include tipografia (italic, 500, 35px, left);
+            @include margin-padding(10px, 10px);
+        }
+    }
+
+    img {
+        transform: translate(500px, -100px);
+        border-radius: 25% 10%;
+    }
+}
+
+
+//MEDIA QUERIES
+/*TABLET*/
+@media (max-width: 768px) {
+    #productos-salados {
+        height: 100vh;
+
+        .proximamente {
+            @include margin-padding(20px, 10px);
+        }
+
+        img {
+            transform: translate(120px, 70px);
+        }
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 320px) {
+    #productos-salados {
+        height: 100vh;
+
+        .proximamente {
+            @include margin-padding(5px, 5px);
+        }
+
+        img {
+            transform: translate(50px, 120px);
+        }
+    }
+}
