@@ -22,4 +22,4 @@ git pull origin main
 ```
 
 ## **Deploy:**
-Se puede ver el sitio desde [http://antojitosdeldia.great-site.net/](https://caroancina.github.io/PreEntrega3-AncinaCarolina/index.html)https://caroancina.github.io/PreEntrega3-AncinaCarolina/index.html
+Se puede ver el sitio desde 
