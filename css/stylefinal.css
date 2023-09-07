@@ -972,62 +972,117 @@ footer .footercolumns .footerRedes h3 {
     height: auto;
   }
 }
-/****Página=proximamente****/
-#productos-salados .proximamente {
-  margin: 60px;
-  padding: 40px;
+/****Página=Tienda****/
+aside {
+  padding: 2rem;
+  padding-right: 0;
+  color: cadetblue;
+  top: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: justify content;
-}
-#productos-salados .proximamente h1 {
-  font-style: italic;
-  font-weight: 800;
-  font-size: 50px;
-  text-align: left;
-  margin: 10px;
-  padding: 10px;
-}
-#productos-salados .proximamente h2 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 35px;
-  text-align: left;
-  margin: 10px;
-  padding: 10px;
-}
-#productos-salados img {
-  transform: translate(500px, -100px);
-  border-radius: 25% 10%;
+  justify-content: space-between;
 }
 
-/*TABLET*/
-@media (max-width: 768px) {
-  #productos-salados {
-    height: 100vh;
-  }
-  #productos-salados .proximamente {
-    margin: 20px;
-    padding: 10px;
-  }
-  #productos-salados img {
-    transform: translate(120px, 70px);
-  }
+ul {
+  list-style-type: none;
 }
-/*MOBILE*/
-@media (max-width: 320px) {
-  #productos-salados {
-    height: 100vh;
-  }
-  #productos-salados .proximamente {
-    margin: 5px;
-    padding: 5px;
-  }
-  #productos-salados img {
-    transform: translate(50px, 120px);
-  }
+
+ul li {
+  padding: 10px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  gap: 1rem;
+  align-items: start;
+  justify-items: center;
+}
+
+.producto-imagen {
+  max-width: 100%;
+}
+
+.btn {
+  margin: 50px;
+  margin-left: 50px;
+  padding: 15px;
+}
+
+/* Estilo para el fondo oscuro detrás del modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 55, 55, 0.7);
+}
+
+/* Estilo para el contenido del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(255, 230, 230, 0.2);
+  position: relative;
+}
+
+/* Estilo para el botón de cerrar el modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilo para el título del modal */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el contenido dentro del modal (puedes personalizarlo según tus necesidades) */
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para los botones "agregar"*/
+button {
+  background-color: #007cb1; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilo para el botón de eliminar dentro del modal */
+button.delete-button {
+  background-color: #ff0000;
+}
+
+li button {
+  background-color: #f36fcd;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 /****Pagina=Contacto****/
 #formulario {
   display: flex;
