@@ -14,11 +14,11 @@ git clone https://github.com/CaroAncina/ProyectoFinal-AncinaCarolina
 ```
 Conecta el repositorio con el equipo local:
 ```
-git remoto add origin https://github.com/CaroAncina/ProyectoFinal-AncinaCarolina
+git remote add origin https://github.com/CaroAncina/ProyectoFinal-AncinaCarolina
 ```
 Trae los archivos del repositorio a GitHub
 ```
-git pull origin main
+git pull -u origin main
 ```
 
 ## **Deploy:**
