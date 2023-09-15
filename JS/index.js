@@ -34,7 +34,7 @@ const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 
 
-// FUNCIÓN PARA CARGAR LOS PRODUCTOS Y MOSTRALOS EN HTML
+// FUNCIÓN PARA CARGAR LOS PRODUCTOS Y MOSTRARLOS EN HTML
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";
@@ -45,7 +45,7 @@ function cargarProductos(productosElegidos) {
         div.classList.add("producto");
         div.innerHTML = `
 
-            <div class="card" style="width: 18rem;">
+            <div class="producto-card" style="width: 18rem;">
                <img class="producto-imagen" src="${producto.Imagen}" alt="${producto.Nombre}">
                  <div class="card-body">
                       <h5 class="card-title">${producto.Nombre}</h5>

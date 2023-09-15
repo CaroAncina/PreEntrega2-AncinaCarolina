@@ -39,69 +39,79 @@
         </nav>
     </header>
 
-    <aside>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <button id="Todos" class="boton-menu boton-categoria active"><i
-                            class="bi bi-hand-index-thumb-fill"></i> Todos nuestros productos</button>
-                </li>
-                <li>
-                    <button id="Tortas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                        Tortas</button>
-                </li>
-                <li>
-                    <button id="Tartas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                        Tartas</button>
-                </li>
-                <li>
-                    <button id="Postres" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                        Postres</button>
-                </li>
-                <li>
-                    <button id="Variedades" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                        Variedades</button>
-                </li>
-            </ul>
-        </nav>
-    </aside>
 
     <main>
-        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
-        <div id="contenedor-productos" class="contenedor-productos">
-            <!-- SE COMPLETA CON JS -->
-        </div>
+        <section class="container">
+            <aside>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <button id="Todos" class="boton-menu boton-categoria active"><i
+                                    class="bi bi-hand-index-thumb-fill"></i> Todos nuestros productos</button>
+                        </li>
+                        <li>
+                            <button id="Tortas" class="boton-menu boton-categoria"><i
+                                    class="bi bi-hand-index-thumb"></i>
+                                Tortas</button>
+                        </li>
+                        <li>
+                            <button id="Tartas" class="boton-menu boton-categoria"><i
+                                    class="bi bi-hand-index-thumb"></i>
+                                Tartas</button>
+                        </li>
+                        <li>
+                            <button id="Postres" class="boton-menu boton-categoria"><i
+                                    class="bi bi-hand-index-thumb"></i>
+                                Postres</button>
+                        </li>
+                        <li>
+                            <button id="Variedades" class="boton-menu boton-categoria"><i
+                                    class="bi bi-hand-index-thumb"></i>
+                                Variedades</button>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
 
-
-        <!-- BOTON PARA EL MODAL -->
-        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#carritoModal">
-            Ver Carrito
-        </button>
-
-        <!-- MODAL -->
-        <div class="modal fade" id="carritoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Carro de compras</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" id="modal-body">
-                        <ul id="carritoLista">
-                            <!-- ACA SE MUESTRAN LOS PRODUCTOS DEL CARRITO -->
-                        </ul>
-                        <hr>
-                        <p>Total a Pagar: $<span id="totalPagar">0.00</span></p>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Finalizar compra</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <div class="contenido">
+                <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+                <div id="contenedor-productos" class="contenedor-productos">
+                    <!-- SE COMPLETA CON JS -->
                 </div>
-            </div>
+
+
+                <!-- BOTON PARA EL MODAL -->
+                <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#carritoModal">
+                    Ver Carrito
+                </button>
+
+                <!-- MODAL -->
+                <div class="modal fade" id="carritoModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Carro de compras</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="modal-body">
+                                <ul id="carritoLista">
+                                    <!-- ACA SE MUESTRAN LOS PRODUCTOS DEL CARRITO -->
+                                </ul>
+                                <hr>
+                                <p><span id="totalPagar">0.00</span></p>
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Finalizar
+                                compra</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
 
     <footer>
