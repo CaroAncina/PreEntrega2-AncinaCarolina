@@ -40,7 +40,7 @@ const mostrarProductos = (productosElegidos) => {
     actualizarBotonesAgregar();
 }
 
-cargarProductos();
+    cargarProductos();
 
 //FUNCIÓN PARA FILTRAR CATEGORIAS POR TIPO EN EL MENU
 function filtrarProductosPorTipo(tipo) {
@@ -49,19 +49,23 @@ function filtrarProductosPorTipo(tipo) {
 }
 
 // FUNCIÓN PARA LOS EVENTOS DE CLICK EN LOS BOTONES DE CATEGORIAS
-botonesCategorias.forEach(boton => {
-    boton.addEventListener("click", (e) => {
-        botonesCategorias.forEach(boton => boton.classList.remove("active"));
-        e.currentTarget.classList.add("active");
+document.addEventListener("DOMContentLoaded", () => {
+    const botonesCategorias = document.querySelectorAll(".boton-categoria");
 
-        const tipoSeleccionado = e.currentTarget.id;
-        if (tipoSeleccionado !== "Todos") {
-            tituloPrincipal.innerText = `Productos de ${tipoSeleccionado}`;
-            filtrarProductosPorTipo(tipoSeleccionado);
-        } else {
-            tituloPrincipal.innerText = "Todos los productos";
-            mostrarProductos(productos);
-        }
+    botonesCategorias.forEach(boton => {
+        boton.addEventListener("click", (e) => {
+            botonesCategorias.forEach(boton => boton.classList.remove("active"));
+            e.currentTarget.classList.add("active");
+
+            const tipoSeleccionado = e.currentTarget.id;
+            if (tipoSeleccionado !== "Todos") {
+                tituloPrincipal.innerText = `Productos de ${tipoSeleccionado}`;
+                filtrarProductosPorTipo(tipoSeleccionado);
+            } else {
+                tituloPrincipal.innerText = "Todos los productos";
+                mostrarProductos(productos);
+            }
+        });
     });
 });
 
@@ -84,3 +88,4 @@ function actualizarBotonesAgregar() {
         }
     });
 }
+

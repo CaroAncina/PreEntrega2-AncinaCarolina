@@ -1226,6 +1226,11 @@ li button {
   padding: 5px;
 }
 
+.botones input:hover {
+  background-color: rgb(255, 196, 196);
+  color: black;
+}
+
 /*TABLET*/
 @media (max-width: 768px) {
   #formulario form {
