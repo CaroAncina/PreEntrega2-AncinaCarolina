@@ -81,7 +81,8 @@
 
 
                 <!-- BOTON PARA EL MODAL -->
-                <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#carritoModal">
+                <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#carritoModal"
+                    id="verCarritoBtn">
                     Ver Carrito
                 </button>
 
@@ -99,13 +100,15 @@
                             <div class="modal-body" id="modal-body">
                                 <ul id="carritoLista">
                                     <!-- ACA SE MUESTRAN LOS PRODUCTOS DEL CARRITO -->
+
                                 </ul>
                                 <hr>
                                 <p><span id="totalPagar">0.00</span></p>
                             </div>
                             <div class="modal-footer">
                             </div>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Finalizar
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                id="finalizarcompraBtn">Finalizar
                                 compra</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                         </div>
@@ -113,6 +116,8 @@
                 </div>
         </section>
     </main>
+
+
 
     <footer>
         <div class="footercolumns">
@@ -154,6 +159,8 @@
     </footer>
 
     <script src="../JS/index.js"></script>
+    <script src="../JS/botones.js"></script>
+    <script src="../JS/carritomodal.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -164,6 +171,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

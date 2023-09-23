@@ -1,69 +1,69 @@
 [
     {
-        "id": "01",
+        "Id": "01",
         "nombre": "Torta",
         "tipo": "Tortas",
         "imagen": "../img/img tienda/torta-principal.jpg",
         "precio": 5760
     },
     {
-        "id": "02",
+        "Id": "02",
         "nombre": "Tarta frutal",
         "tipo": "Tartas",
         "imagen": "../img/img tienda/tarta-frutal.jpg",
         "precio": 3000
     },
     {
-        "id": "03",
+        "Id": "03",
         "nombre": "Rosca de Pascua",
         "tipo": "Variedades",
         "imagen": "../img/img tienda/rosca-pascua.jpg",
         "precio": 1800
     },
     {
-        "id": "04",
+        "Id": "04",
         "nombre": "Torta Marquise",
         "tipo": "Tortas",
         "imagen": "../img/img tienda/torta-marquise.jpg",
         "precio": 3250
     },
     {
-        "id": "05",
+        "Id": "05",
         "nombre": "Cheesecake",
         "tipo": "Postres",
         "imagen": "../img/img tienda/cheesecake.jpg",
         "precio": 3500
     },
     {
-        "id": "06",
+        "Id": "06",
         "nombre": "Lemon Pie",
         "tipo": "Tartas",
         "imagen": "../img/img tienda/lemon-pie.jpg",
         "precio": 2000
     },
     {
-        "id": "07",
+        "Id": "07",
         "nombre": "Pan dulce",
         "tipo": "Variedades",
         "imagen": "../img/img tienda/pan-dulce.jpg",
         "precio": 1500
     },
     {
-        "id": "08",
+        "Id": "08",
         "nombre": "Muffins",
         "tipo": "Variedades",
         "imagen": "../img/img tienda/muffins-decorados.jpg",
         "precio": 4500
     },
     {
-        "id": "09",
+        "Id": "09",
         "nombre": "Budin marmolado",
         "tipo": "Variedades",
         "imagen": "../img/img tienda/budin.jpg",
         "precio": 1250
     },
     {
-        "id": "010",
+        "Id": "10",
         "nombre": "Cookies",
         "tipo": "Variedades",
         "imagen": "../img/img tienda/galletitas.jpg",

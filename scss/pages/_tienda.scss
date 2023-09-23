@@ -87,7 +87,7 @@ p.card-text {
 }
 
 .btn {
-    margin: 50px;
+    margin: 20px;
     margin-left: 50px;
     padding: 15px;
 }
@@ -109,10 +109,26 @@ p.card-text {
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     box-shadow: 0 4px 8px 0 rgba(255, 230, 230, 0.2);
     position: relative;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content li {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.modal-title{
+    font-size: 25px;
 }
 
 // Estilo para el botón de cerrar el modal 
@@ -133,19 +149,23 @@ h2 {
 
 //Estilo para el contenido dentro del modal 
 p {
-    font-size: 16px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
 // Estilo para los botones "agregar"
-
 .producto-agregar {
-
     background-color: lightblue;
     color: black;
     padding: 10px;
     border: 2px solid var(--clr-white);
     transition: background-color .2s, color .2s;
+    height:50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
 }
 
 .producto-agregar:hover {
@@ -155,9 +175,7 @@ p {
 
 button {
     background-color: #007cb1;
-    /* Color de fondo del botón */
     color: #fff;
-    /* Color del texto del botón */
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -168,6 +186,8 @@ button {
 // Estilo para el botón de eliminar dentro del modal 
 .producto-eliminar {
     background-color: #ff0000;
+    margin-left: 2rem;
+    
 }
 
 li button {
